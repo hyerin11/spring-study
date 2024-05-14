@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV1_2완료">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v2/FrontControllerV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v2/controller/ControllerV2.java" afterDir="false" />
+    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/ModelAndView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v3/FrontControllerV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v3/controller/ControllerV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v3/controller/JoinController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v3/controller/SaveController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v3/controller/ShowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v2/controller/JoinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v2/controller/JoinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v2/controller/SaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v2/controller/SaveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v2/controller/ShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v2/controller/ShowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,6 +122,7 @@
       <recent name="com.study.springstudy.chap01" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.study.springstudy.webservlet.chap02.v3.controller" />
       <recent name="com.study.springstudy.webservlet.chap02.v2" />
     </key>
   </component>
@@ -210,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715668116062</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV2">
+      <option name="closed" value="true" />
+      <created>1715670726492</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715670726492</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -218,7 +228,8 @@
     <MESSAGE value="#Spring_2" />
     <MESSAGE value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV1" />
     <MESSAGE value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV1_2완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV1_2완료" />
+    <MESSAGE value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV2" />
+    <option name="LAST_COMMIT_MESSAGE" value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
