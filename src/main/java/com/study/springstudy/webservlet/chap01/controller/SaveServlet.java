@@ -1,5 +1,6 @@
 package com.study.springstudy.webservlet.chap01.controller;
 
+import com.study.springstudy.webservlet.MemberMemoryRepo;
 import com.study.springstudy.webservlet.entity.Member;
 
 import javax.servlet.ServletException;
@@ -12,6 +13,9 @@ import java.io.IOException;
 @WebServlet("/chap01/save")
 public class SaveServlet extends HttpServlet {
 
+    private MemberMemoryRepo repo = MemberMemoryRepo.getInstance();
+
+
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -22,10 +26,11 @@ public class SaveServlet extends HttpServlet {
         
         //2. 회원 정보를 객체로 포장하여 적절한 저장소에 저장
         Member member = new Member(account, password, userName);
-        System.out.println("member = " + member);
-        
-        
-        //3. 적절한 페이지로 이동 - 홈으로 리다이렉트
+        //System.out.println("member = " + member);
+        repo.save(member);
+
+        //3. 적절한 페이지로 이동 - 조회화면으로 리다이렉트
+        resp.sendRedirect("/chap01/show");
 
         }
 
