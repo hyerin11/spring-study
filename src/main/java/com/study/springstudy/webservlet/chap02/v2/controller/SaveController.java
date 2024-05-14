@@ -1,6 +1,7 @@
 package com.study.springstudy.webservlet.chap02.v2.controller;
 
 import com.study.springstudy.webservlet.MemberMemoryRepo;
+import com.study.springstudy.webservlet.View;
 import com.study.springstudy.webservlet.entity.Member;
 
 import javax.servlet.ServletException;
@@ -13,7 +14,7 @@ public class SaveController implements ControllerV2 {
     private MemberMemoryRepo repo = MemberMemoryRepo.getInstance();
 
     @Override
-    public void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public View process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String userName = request.getParameter("userName");
         String account = request.getParameter("account");
@@ -22,8 +23,7 @@ public class SaveController implements ControllerV2 {
         Member member = new Member(account, password, userName);
         repo.save(member);
 
-        response.sendRedirect("/chap02/v1/show");
-
-
+        //response.sendRedirect("/chap02/v1/show");
+        return new View("redirect:/chap02/v2/show");
     }
 }

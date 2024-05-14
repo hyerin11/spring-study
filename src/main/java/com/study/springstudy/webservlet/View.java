@@ -17,18 +17,34 @@ public class View {
 
     // viewName에 register를 전달하면
     // 완성된 이름은 /WEB-INF/views/register.jsp
+    //redirect일 때는 앞에 있는 redirect: 을 제거해야 한다
     public View(String viewName) {
         this.prefix = "/WEB-INF/views/";
         this.suffix = ".jsp";
 
-        this.viewName = prefix + viewName + suffix;
+        if(!isRedirect(viewName)) {
+            this.viewName = prefix + viewName + suffix;
+        }else{
+            //redirect:/chap02/v2/show
+            this.viewName = viewName.substring(viewName.indexOf(":") + 1);
+        }
     }
 
-    // 포워딩 기능
+    // 포워딩 or 리다이렉트 기능
     public void render(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        RequestDispatcher dp = request.getRequestDispatcher(viewName);
-        dp.forward(request, response);
+        if(!this.redirect) {
+            RequestDispatcher dp = request.getRequestDispatcher(viewName);
+            dp.forward(request, response);
+        }else{
+            response.sendRedirect(viewName);
+        }
+    }
+
+    //리다이렉트인지 확인
+    private boolean isRedirect(String viewName){
+        this.redirect = viewName.startsWith("redirect:");
+        return this.redirect;
     }
 
 }

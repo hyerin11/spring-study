@@ -1,5 +1,7 @@
 package com.study.springstudy.webservlet.chap02.v2.controller;
 
+import com.study.springstudy.webservlet.View;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -9,14 +11,7 @@ import java.io.IOException;
 public class JoinController implements ControllerV2 {
 
     @Override
-    public void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        String viewName = "/WEB-INF/views/v1/reg_form.jsp";
-
-        RequestDispatcher dp
-                = request.getRequestDispatcher(viewName);
-        dp.forward(request, response);
-
+    public View process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        return new View("v2/reg_form");
     }
-
 }
