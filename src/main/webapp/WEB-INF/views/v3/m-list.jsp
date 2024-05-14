@@ -33,7 +33,7 @@
 
     </ul>
 
-    <a href="/chap03/join">새로운 회원가입하기</a>
+    <a href="/chap02/v3/join">새로운 회원가입하기</a>
 
 
     
