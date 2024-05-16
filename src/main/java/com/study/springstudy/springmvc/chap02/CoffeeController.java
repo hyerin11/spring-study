@@ -20,6 +20,7 @@ public class CoffeeController {
         return "mvc/coffee-form";
     }
 
+
     // POST 요청만 받겠다
 //    @RequestMapping(value = "/result", method = RequestMethod.POST)
     @PostMapping("/result")
