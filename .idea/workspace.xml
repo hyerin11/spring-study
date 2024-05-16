@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#SpringMVC 요청처리1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap01/ResponseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap02/CoffeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap02/LoginController.java" afterDir="false" />
+    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#SpringMVC 로그인/비번">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -263,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715824677511</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="#SpringMVC 로그인/비번">
+      <option name="closed" value="true" />
+      <created>1715831366227</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715831366227</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -279,7 +284,8 @@
     <MESSAGE value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV4_delete기능_detail기능 추가" />
     <MESSAGE value="#Spring_3_회원가입 정보 저장하기_FrontControllerV5_spring사용" />
     <MESSAGE value="#SpringMVC 요청처리1" />
-    <option name="LAST_COMMIT_MESSAGE" value="#SpringMVC 요청처리1" />
+    <MESSAGE value="#SpringMVC 로그인/비번" />
+    <option name="LAST_COMMIT_MESSAGE" value="#SpringMVC 로그인/비번" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
