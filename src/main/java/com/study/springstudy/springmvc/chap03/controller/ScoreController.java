@@ -3,6 +3,8 @@ package com.study.springstudy.springmvc.chap03.controller;
 import com.study.springstudy.springmvc.chap03.dto.ScorePostDto;
 import com.study.springstudy.springmvc.chap03.entity.Score;
 import com.study.springstudy.springmvc.chap03.repository.ScoreJdbcRepository;
+import com.study.springstudy.springmvc.chap03.repository.ScoreMemoryRepository;
+import com.study.springstudy.springmvc.chap03.repository.ScoreRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,7 +32,7 @@ import java.util.List;
 public class ScoreController {
 
     // 의존객체 설정
-    private ScoreJdbcRepository repository = new ScoreJdbcRepository();
+    private ScoreRepository repository = new ScoreMemoryRepository();
 
     @GetMapping("/list")
     public String list(Model model) {
