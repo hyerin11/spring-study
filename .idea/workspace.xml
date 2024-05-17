@@ -4,11 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#SpringMVC 성적관리앱2_detail, rank">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/repository/ScoreMemoryRepository.java" afterDir="false" />
+    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#SpringMVC - Lombok">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap04/AsianRestaurant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap04/Chef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap04/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap04/FrenchCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap04/Hotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap04/HotelConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap04/JannChef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap04/KimuraChef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap04/Restaurant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap04/SushiCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap04/WesternRestaurant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/database/chap01/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/database/chap01/SpringJdbc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/core/chap04/HotelSpringDiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/database/chap01/SpringJdbcTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/StudentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap03/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap03/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/controller/ScoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/controller/ScoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/repository/ScoreJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/repository/ScoreJdbcRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/repository/ScoreMemoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/repository/ScoreMemoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/repository/ScoreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/repository/ScoreRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/score/score-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/score/score-list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +64,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -76,32 +97,38 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.HotelDiTest.diTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.HotelTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.springstudy [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/springmvc/springstudy/src/main/java/com/study/springstudy/webservlet/chap02/v2&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;E:/springmvc/springstudy/src/main/java/com/study/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;애플리케이션.Main.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.HotelDiTest.diTest.executor": "Run",
+    "Gradle.HotelTest.executor": "Run",
+    "Gradle.springstudy [:Main.main()].executor": "Run",
+    "JUnit.HotelSpringDITest.diTest.executor": "Run",
+    "JUnit.HotelSpringDITest.executor": "Run",
+    "JUnit.SpringJdbcTest.saveTest.executor": "Run",
+    "JUnit.StudentTest.sTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/springmvc/springstudy/src/main/java/com/study/springstudy/core/chap04",
+    "onboarding.tips.debug.path": "E:/springmvc/springstudy/src/main/java/com/study/Main.java",
+    "project.structure.last.edited": "프로젝트",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "애플리케이션.Main.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.study.springstudy.database.chap01" />
       <recent name="com.study.springstudy.springmvc.chap03.entity" />
       <recent name="com.study.springstudy.chap02" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\springmvc\springstudy\src\main\java\com\study\springstudy\core\chap04" />
       <recent name="E:\springmvc\springstudy\src\main\java\com\study\springstudy\webservlet\chap02\v2" />
       <recent name="E:\springmvc\springstudy\src\main\java\com\study\springstudy\chap03" />
       <recent name="E:\springmvc\springstudy\src\main\java\com\study\springstudy\chap02" />
@@ -115,6 +142,9 @@
       <recent name="E:\springmvc\springstudy\src\main\resources\webapp" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.study.springstudy.database.chap01" />
+      <recent name="com.study.springstudy.springmvc" />
+      <recent name="com.study.springstudy.core.chap04" />
       <recent name="com.study.springstudy.chap03" />
       <recent name="com.study.springstudy.chap01" />
     </key>
@@ -123,7 +153,7 @@
       <recent name="com.study.springstudy.webservlet.chap02.v2" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.Main">
+  <component name="RunManager" selected="JUnit.SpringJdbcTest.saveTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.study.springstudy.Main" />
       <module name="springstudy.main" />
@@ -137,34 +167,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotelDiTest.diTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.study.springstudy.chap03.HotelDiTest.diTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="HotelSpringDITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springstudy.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.springstudy.core.chap04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.springstudy.core.chap04" />
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.core.chap04.HotelSpringDITest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HotelSpringDITest.diTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springstudy.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.springstudy.core.chap04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.springstudy.core.chap04" />
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.core.chap04.HotelSpringDITest" />
+      <option name="METHOD_NAME" value="diTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringJdbcTest.saveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springstudy.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.springstudy.database.chap01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.springstudy.database.chap01" />
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.database.chap01.SpringJdbcTest" />
+      <option name="METHOD_NAME" value="saveTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest.sTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springstudy.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.springstudy.springmvc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc" />
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.StudentTest" />
+      <option name="METHOD_NAME" value="sTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.HotelDiTest.diTest" />
+        <item itemvalue="JUnit.SpringJdbcTest.saveTest" />
         <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="JUnit.StudentTest.sTest" />
+        <item itemvalue="JUnit.HotelSpringDITest" />
+        <item itemvalue="JUnit.HotelSpringDITest.diTest" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +361,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715845638272</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="#SpringMVC 의존성 문제 해결">
+      <option name="closed" value="true" />
+      <created>1715905143182</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1715905143182</updated>
+    </task>
+    <task id="LOCAL-00016" summary="#SpringMVC - Lombok">
+      <option name="closed" value="true" />
+      <created>1715909619993</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715909619993</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -308,7 +396,9 @@
     <MESSAGE value="#SpringMVC 로그인/비번" />
     <MESSAGE value="#SpringMVC 성적관리앱_db연결" />
     <MESSAGE value="#SpringMVC 성적관리앱2_detail, rank" />
-    <option name="LAST_COMMIT_MESSAGE" value="#SpringMVC 성적관리앱2_detail, rank" />
+    <MESSAGE value="#SpringMVC 의존성 문제 해결" />
+    <MESSAGE value="#SpringMVC - Lombok" />
+    <option name="LAST_COMMIT_MESSAGE" value="#SpringMVC - Lombok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
