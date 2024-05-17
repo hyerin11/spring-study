@@ -47,6 +47,20 @@ public class SpringJdbc {
         return template.query(sql, (rs, rowNum) -> new Person(rs));
     }
 
+    //SELECT : 단일행 조회
+    public Person findOne(long id){
+        String sql = "SELECT * FROM tbl_person WHERE id = ?";
+        Person person = template.queryForObject(sql, (rs, n) -> new Person(rs), id);
+        return person;
+    }
+
+//    // SELECT : 단일행 조회
+//    public Person findOne(long id) {
+//        String sql = "SELECT * FROM tbl_person WHERE id = ?";
+//        return template.queryForObject(sql, (rs, n) -> new Person(rs));
+//    }
+
+
     // 내부 클래스
     public static class PersonMapper implements RowMapper<Person> {
 

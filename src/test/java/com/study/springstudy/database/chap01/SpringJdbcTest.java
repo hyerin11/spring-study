@@ -75,5 +75,20 @@ class SpringJdbcTest {
     }
     
     
+    @Test
+    @DisplayName("사람 정보를 아이디로 단일조회 시 아이디가 300인 사람의 이름은 고영희이고 나이는 333살이다.")
+    void findOneTest() {
+        //given
+        long id = 300;
+        //when
+        Person person = springJdbc.findOne(id);
+        //then
+        System.out.println("person = " + person);
+
+        assertNotNull(person);
+        assertEquals("고영희", person.getPersonName());
+        assertEquals(333, person.getPersonAge());
+    }
+    
     
 }
