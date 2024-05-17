@@ -6,8 +6,8 @@ import com.study.springstudy.springmvc.chap03.repository.ScoreJdbcRepository;
 import com.study.springstudy.springmvc.chap03.repository.ScoreMemoryRepository;
 import com.study.springstudy.springmvc.chap03.repository.ScoreRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Repository;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /*
     # 요청 URL
@@ -31,7 +32,7 @@ import java.util.List;
     4. 성적정보 상세 조회 요청
     - /score/detail : GET
  */
-@Repository //의존객체다는 것을 알려주기 위해 COMPONENTN대신 레파지토리를 쓴다
+@Controller
 @RequestMapping("/score")
 @RequiredArgsConstructor
 public class ScoreController {
@@ -39,12 +40,10 @@ public class ScoreController {
     // 의존객체 설정
     private final ScoreRepository repository;
 
-    // 스프링이 관리해줄꺼야~~~
-    //@Autowired
+//     @Autowired
 //    public ScoreController(ScoreRepository repository) {
 //        this.repository = repository;
 //    }
-
 
     @GetMapping("/list")
     public String list(@RequestParam(defaultValue = "num") String sort, Model model) {
@@ -56,6 +55,8 @@ public class ScoreController {
 
         return "score/score-list";
     }
+
+
 
     @PostMapping("/register")
     public String register(ScorePostDto dto) {
@@ -72,9 +73,10 @@ public class ScoreController {
     }
 
     @GetMapping("/remove")
-    public String remove(long sn) {
+    public String remove(@RequestParam("sn") long stuNum) {
         System.out.println("/score/remove : GET!");
-        repository.delete(sn);
+
+        repository.delete(stuNum);
         return "redirect:/score/list";
     }
 
