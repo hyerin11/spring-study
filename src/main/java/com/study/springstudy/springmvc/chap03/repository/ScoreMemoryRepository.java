@@ -11,13 +11,18 @@ public class ScoreMemoryRepository implements ScoreRepository{
     }
 
     @Override
-    public List<Score> findAll() {
+    public List<Score> findAll(String sort) {
         return List.of();
     }
 
     @Override
     public Score findOne(long stuNum) {
         return null;
+    }
+
+    @Override
+    public boolean delete(long stuNum) {
+        return false;
     }
 
     @Override
