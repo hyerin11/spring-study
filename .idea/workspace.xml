@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#SpringMVC - 게시판앱2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardListResponseDto.java" afterDir="false" />
+    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#SpringMVC - 게시판앱3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardDetailResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/DeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/DeleteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardListResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardListResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -427,11 +428,18 @@
       <option name="project" value="LOCAL" />
       <updated>1716167127845</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="#SpringMVC - 게시판앱3">
+      <option name="closed" value="true" />
+      <created>1716169678732</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1716169678732</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="#Spring" />
     <MESSAGE value="#Spring_2" />
     <MESSAGE value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV1" />
     <MESSAGE value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV1_2완료" />
@@ -456,7 +464,8 @@
     <MESSAGE value="#SpringMVC - 점수 삽입, 조회, 변경, 삭제" />
     <MESSAGE value="#SpringMVC - Board_1차완료_목록조회, 화면 열기,  등록 요청" />
     <MESSAGE value="#SpringMVC - 게시판앱2" />
-    <option name="LAST_COMMIT_MESSAGE" value="#SpringMVC - 게시판앱2" />
+    <MESSAGE value="#SpringMVC - 게시판앱3" />
+    <option name="LAST_COMMIT_MESSAGE" value="#SpringMVC - 게시판앱3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
