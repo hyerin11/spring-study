@@ -5,6 +5,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Web Study</title>
+
+<style>
+  body {
+    background: url('/assets/img/a.jpg') no-repeat center/cover;
+  }
+</style>
+
 </head>
 <body>
   <h1>hello!!! JSP</h1>
