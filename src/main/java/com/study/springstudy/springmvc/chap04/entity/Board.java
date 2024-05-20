@@ -1,27 +1,27 @@
 package com.study.springstudy.springmvc.chap04.entity;
-/*
-CREATE TABLE tbl_board (
 
-   board_no INT(8) PRIMARY KEY auto_increment,
-    title VARCHAR(200) NOT NULL,
-    content TEXT,
-    writer VARCHAR(100) NOT NULL,
-    view_count INT(8) DEFAULT 0,
-    reg_date_time DATETIME DEFAULT current_timestamp
-);
-*/
-
-
-import com.study.springstudy.springmvc.chap04.dto.BoardDto;
 import lombok.*;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.time.LocalDateTime;
+
+
+/*
+    CREATE TABLE tbl_board (
+        board_no INT(8) PRIMARY KEY auto_increment,
+        title VARCHAR(200) NOT NULL,
+        content TEXT,
+        writer VARCHAR(100) NOT NULL,
+        view_count INT(8) DEFAULT 0,
+        reg_date_time DATETIME DEFAULT current_timestamp
+    );
+ */
 
 @Setter @Getter @ToString
 @EqualsAndHashCode
 @NoArgsConstructor
-//@AllArgsConstructor
-
+@AllArgsConstructor
 public class Board {
 
     private int boardNo; // 게시글 번호
@@ -31,10 +31,12 @@ public class Board {
     private int viewCount; // 조회수
     private LocalDateTime regDateTime; // 작성일시
 
-
-    public Board(BoardDto dto) {
-        this.title = title;
-        this.content = content;
-        this.writer = writer;
+    public Board(ResultSet rs) throws SQLException {
+        this.boardNo = rs.getInt("board_no");
+        this.writer = rs.getString("writer");
+        this.content = rs.getString("content");
+        this.title = rs.getString("title");
+        this.viewCount = rs.getInt("view_count");
+        this.regDateTime = rs.getTimestamp("reg_date_time").toLocalDateTime();
     }
 }
