@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#SpringMVC - 게시판앱4_조회수">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/a.jpg" afterDir="false" />
+    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#SpringMVC - 사진">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/dto/ScoreListResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/service/ScoreService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/controller/ScoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/controller/ScoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/dto/ScorePostDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/dto/ScorePostDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/repository/ScoreSpringJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/repository/ScoreSpringJdbcRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/score/score-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/score/score-list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +110,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.study.springstudy.springmvc.chap03.service" />
       <recent name="com.study.springstudy.database.chap01" />
       <recent name="com.study.springstudy.springmvc.chap03.entity" />
       <recent name="com.study.springstudy.chap02" />
@@ -450,11 +456,18 @@
       <option name="project" value="LOCAL" />
       <updated>1716173647840</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="#SpringMVC - 사진">
+      <option name="closed" value="true" />
+      <created>1716174044416</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1716174044416</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV1_2완료" />
     <MESSAGE value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV2" />
     <MESSAGE value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV3" />
     <MESSAGE value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV3_" />
@@ -479,7 +492,8 @@
     <MESSAGE value="#SpringMVC - 게시판앱3" />
     <MESSAGE value="#SpringMVC - 게시판앱4_삭제" />
     <MESSAGE value="#SpringMVC - 게시판앱4_조회수" />
-    <option name="LAST_COMMIT_MESSAGE" value="#SpringMVC - 게시판앱4_조회수" />
+    <MESSAGE value="#SpringMVC - 사진" />
+    <option name="LAST_COMMIT_MESSAGE" value="#SpringMVC - 사진" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

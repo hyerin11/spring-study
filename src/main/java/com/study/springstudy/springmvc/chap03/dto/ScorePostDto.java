@@ -1,7 +1,8 @@
 package com.study.springstudy.springmvc.chap03.dto;
 
-//역할 : 브라우저가 전달한 성적 정보를 포장하는 객체
+// 역할: 브라우저가 전달한 성적정보를 포장하는 객체
 public class ScorePostDto {
+
     private String name;
     private int kor;
     private int eng;
@@ -39,10 +40,9 @@ public class ScorePostDto {
         this.math = math;
     }
 
-
     @Override
     public String toString() {
-        return "ScoreDto{" +
+        return "ScorePostDto{" +
                 "name='" + name + '\'' +
                 ", kor=" + kor +
                 ", eng=" + eng +

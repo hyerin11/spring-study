@@ -7,9 +7,9 @@
   <title>Web Study</title>
 
 <style>
-  body {
+  /* body {
     background: url('/assets/img/a.jpg') no-repeat center/cover;
-  }
+  } */
 </style>
 
 </head>
