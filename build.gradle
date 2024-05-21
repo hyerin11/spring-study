@@ -32,8 +32,11 @@ dependencies {
     //마리아디비 커넥터
     implementation 'org.mariadb.jdbc:mariadb-java-client:3.3.3'
 
-    // Spring jdbc모듈
+    // Spring JDBC 모듈
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+
+    // 마이바티스 모듈
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
 
 }
 
