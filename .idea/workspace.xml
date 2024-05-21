@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#3 tier architecture - part3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/database/chap02/PersonMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/dto/RankDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/mapper/ScoreMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/PersonMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ScoreMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/database/chap02/PersonMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/chap03/mapper/ScoreMapperTest.java" afterDir="false" />
+    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#mybatis">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/mapper/BoardMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/chap04/mapper/BoardMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/chap04/service/BoardServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/dto/ScoreDetailResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/dto/ScoreDetailResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/entity/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/entity/Score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/service/ScoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/service/ScoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/mapper/ScoreMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/mapper/ScoreMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +49,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -92,6 +87,7 @@
     "Gradle.HotelTest.executor": "Run",
     "Gradle.springstudy [:Main.main()].executor": "Run",
     "Gradle.소스 다운로드.executor": "Run",
+    "JUnit.BoardMapperTest.saveFile.executor": "Run",
     "JUnit.HotelSpringDITest.diTest.executor": "Run",
     "JUnit.HotelSpringDITest.executor": "Run",
     "JUnit.PersonMapperTest.delTest.executor": "Run",
@@ -148,18 +144,34 @@
       <recent name="E:\springmvc\springstudy\src\main" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.study.springstudy.springmvc.chap04.mapper" />
+      <recent name="com.study.springstudy.springmvc.chap04.service" />
       <recent name="com.study.springstudy.springmvc.chap03.mapper" />
       <recent name="com.study.springstudy.database.chap02" />
       <recent name="com.study.springstudy.database.chap01" />
-      <recent name="com.study.springstudy.springmvc" />
-      <recent name="com.study.springstudy.core.chap04" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.study.springstudy.webservlet.chap02.v3.controller" />
       <recent name="com.study.springstudy.webservlet.chap02.v2" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BoardMapperTest.saveFile">
+    <configuration name="BoardMapperTest.saveFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springstudy.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.springstudy.springmvc.chap04.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap04.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap04.mapper.BoardMapperTest" />
+      <option name="METHOD_NAME" value="saveFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PersonMapperTest.findNamesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springstudy.test" />
       <extension name="coverage">
@@ -171,22 +183,6 @@
       <option name="PACKAGE_NAME" value="com.study.springstudy.database.chap02" />
       <option name="MAIN_CLASS_NAME" value="com.study.springstudy.database.chap02.PersonMapperTest" />
       <option name="METHOD_NAME" value="findNamesTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonMapperTest.findOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springstudy.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.study.springstudy.database.chap02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.study.springstudy.database.chap02" />
-      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.database.chap02.PersonMapperTest" />
-      <option name="METHOD_NAME" value="findOneTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -242,11 +238,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BoardMapperTest.saveFile" />
         <item itemvalue="JUnit.ScoreMapperTest.rankTest" />
         <item itemvalue="JUnit.ScoreMapperTest.findOneTest" />
         <item itemvalue="JUnit.ScoreMapperTest.findAllTest" />
         <item itemvalue="JUnit.PersonMapperTest.findNamesTest" />
-        <item itemvalue="JUnit.PersonMapperTest.findOneTest" />
       </list>
     </recent_temporary>
   </component>
@@ -507,7 +503,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716186181972</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="#mybatis">
+      <option name="closed" value="true" />
+      <created>1716260160223</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1716260160223</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -522,7 +526,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV3_오류수정" />
     <MESSAGE value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV3_오류수정_" />
     <MESSAGE value="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV4_delete기능_detail기능 추가" />
     <MESSAGE value="#Spring_3_회원가입 정보 저장하기_FrontControllerV5_spring사용" />
@@ -547,7 +550,8 @@
     <MESSAGE value="#3 tier architecture - part1" />
     <MESSAGE value="#3 tier architecture - part2" />
     <MESSAGE value="#3 tier architecture - part3" />
-    <option name="LAST_COMMIT_MESSAGE" value="#3 tier architecture - part3" />
+    <MESSAGE value="#mybatis" />
+    <option name="LAST_COMMIT_MESSAGE" value="#mybatis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
