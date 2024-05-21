@@ -23,4 +23,5 @@ public interface BoardMapper {
     // 조회수 상승
     void upViewCount(int boardNo);
 
+
 }

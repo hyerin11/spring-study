@@ -28,5 +28,4 @@ public interface ScoreMapper {
     boolean updateScore(Score s);
 
 
-
 }
