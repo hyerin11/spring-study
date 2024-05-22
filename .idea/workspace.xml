@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#mybatis4_게시물 검색#1">
+    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#mybatis4_게시물 검색#1(타입별)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -571,7 +568,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716355969828</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="#mybatis4_게시물 검색#1(타입별)">
+      <option name="closed" value="true" />
+      <created>1716357019847</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1716357019847</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -586,7 +591,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="#SpringMVC - Lombok" />
     <MESSAGE value="#SpringMVC - Lombok 사용한 호텔레스토랑 예시" />
     <MESSAGE value="#SpringMVC - Lombok 점수관리 프로그램" />
     <MESSAGE value="#SpringMVC - Lombok student" />
@@ -611,7 +615,8 @@
     <MESSAGE value="#mybatis4_게시물 n개씩 보기_3(prev,next)" />
     <MESSAGE value="#mybatis4_게시물 n개씩 보기_4(첫페이지, 끝페이지 이동)" />
     <MESSAGE value="#mybatis4_게시물 검색#1" />
-    <option name="LAST_COMMIT_MESSAGE" value="#mybatis4_게시물 검색#1" />
+    <MESSAGE value="#mybatis4_게시물 검색#1(타입별)" />
+    <option name="LAST_COMMIT_MESSAGE" value="#mybatis4_게시물 검색#1(타입별)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
