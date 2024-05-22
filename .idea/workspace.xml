@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#mybatis4_게시물 n개씩 보기_3(prev,next)">
+    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#mybatis4_게시물 n개씩 보기_4(첫페이지, 끝페이지 이동)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/common/Search.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/common/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/common/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/common/PageMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/common/PageMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -555,7 +556,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716345614864</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="#mybatis4_게시물 n개씩 보기_4(첫페이지, 끝페이지 이동)">
+      <option name="closed" value="true" />
+      <created>1716354523799</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1716354523799</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -570,7 +579,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="#SpringMVC 성적관리앱2_detail, rank" />
     <MESSAGE value="#SpringMVC 의존성 문제 해결" />
     <MESSAGE value="#SpringMVC - Lombok" />
     <MESSAGE value="#SpringMVC - Lombok 사용한 호텔레스토랑 예시" />
@@ -595,7 +603,8 @@
     <MESSAGE value="#mybatis4_게시물 n개씩 보기_1" />
     <MESSAGE value="#mybatis4_게시물 n개씩 보기_2(마지막 구간 페이지 설정)" />
     <MESSAGE value="#mybatis4_게시물 n개씩 보기_3(prev,next)" />
-    <option name="LAST_COMMIT_MESSAGE" value="#mybatis4_게시물 n개씩 보기_3(prev,next)" />
+    <MESSAGE value="#mybatis4_게시물 n개씩 보기_4(첫페이지, 끝페이지 이동)" />
+    <option name="LAST_COMMIT_MESSAGE" value="#mybatis4_게시물 n개씩 보기_4(첫페이지, 끝페이지 이동)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
