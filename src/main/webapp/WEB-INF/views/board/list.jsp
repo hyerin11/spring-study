@@ -22,7 +22,7 @@
 
       <style>
         .card-container .card .card-title-wrapper .time-view-wrapper>div.hit {
-          background: rgb(255, 255, 193);
+          background: yellow;
         }
       </style>
 
@@ -50,11 +50,11 @@
                       ${b.date}
                     </div>
 
-                      <c:if test = ${b.hit}>
-                        <div class="hit">HIT</div>
-                      </c:if>
+                    <c:if test="${b.hit}">
+                      <div class="hit">HIT</div>
+                    </c:if>
 
-                      <c:if test="${b.newArticle}">
+                    <c:if test="${b.newArticle}">
                       <div class="hit">NEW</div>
                     </c:if>
 
