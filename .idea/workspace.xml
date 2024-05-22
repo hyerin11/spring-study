@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#mybatis4_게시물 n개씩 보기_2(마지막 구간 페이지 설정)">
+    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#mybatis4_게시물 n개씩 보기_3(prev,next)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/common/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/common/Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/common/PageMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/common/PageMaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
     </list>
@@ -546,7 +547,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716345071510</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="#mybatis4_게시물 n개씩 보기_3(prev,next)">
+      <option name="closed" value="true" />
+      <created>1716345614864</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1716345614864</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -561,7 +570,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="#SpringMVC 성적관리앱_db연결" />
     <MESSAGE value="#SpringMVC 성적관리앱2_detail, rank" />
     <MESSAGE value="#SpringMVC 의존성 문제 해결" />
     <MESSAGE value="#SpringMVC - Lombok" />
@@ -586,7 +594,8 @@
     <MESSAGE value="#mybatis3_board_hit/new기능 추가_수정" />
     <MESSAGE value="#mybatis4_게시물 n개씩 보기_1" />
     <MESSAGE value="#mybatis4_게시물 n개씩 보기_2(마지막 구간 페이지 설정)" />
-    <option name="LAST_COMMIT_MESSAGE" value="#mybatis4_게시물 n개씩 보기_2(마지막 구간 페이지 설정)" />
+    <MESSAGE value="#mybatis4_게시물 n개씩 보기_3(prev,next)" />
+    <option name="LAST_COMMIT_MESSAGE" value="#mybatis4_게시물 n개씩 보기_3(prev,next)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

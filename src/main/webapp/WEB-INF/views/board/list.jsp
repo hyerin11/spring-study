@@ -26,7 +26,7 @@
 
       <style>
         .card-container .card .card-title-wrapper .time-view-wrapper>div.hit {
-          background: rgb(255, 248, 150);
+          background: yellow;
         }
       </style>
 
@@ -78,50 +78,58 @@
                 </button>
               </div>
             </div>
+            <!-- end div.card-wrapper -->
           </c:forEach>
-          
+
 
         </div>
         <!-- end div.card-container -->
 
-          <!-- 게시글 목록 하단 영역 -->
+        <!-- 게시글 목록 하단 영역 -->
         <div class="bottom-section">
 
           <!-- 페이지 버튼 영역 -->
           <nav aria-label="Page navigation example">
             <ul class="pagination pagination-lg pagination-custom">
+              
+              <c:if test="${maker.pageInfo.pageNo != 1}">
+                <li class="page-item">
+                  <a class="page-link" href="/board/list?pageNo=1"><<</a>
+                </li>
+              </c:if>
 
-              <!-- 이전 페이지 -->
               <c:if test="${maker.prev}">
-              <li class="page-item">
-                <a class="page-link" href="/board/list?pageNo=${maker.begin-1}">prev</a>
-              </li>
-            </c:if>
+                <li class="page-item">
+                  <a class="page-link" href="/board/list?pageNo=${maker.begin - 1}">prev</a>
+                </li>
+              </c:if>
 
               <c:forEach var="i" begin="${maker.begin}" end="${maker.end}">
-              <li data-page-num="${i}" class="page-item">
-                <a class="page-link" href="/board/list?pageNo=${i}">${i}</a>
-              </li>
-            </c:forEach>
-            
-            <!-- 다음 페이지 -->
-            <c:if test="${maker.next}">
-            <li class="page-item">
-              <a class="page-link" href="/board/list?pageNo=${maker.end+1}">next</a>
-            </li>
-            </c:if>
+                <li data-page-num="${i}" class="page-item">
+                  <a class="page-link" href="/board/list?pageNo=${i}">${i}</a>
+                </li>
+              </c:forEach>
 
+              <c:if test="${maker.next}">
+                <li class="page-item">
+                  <a class="page-link" href="/board/list?pageNo=${maker.end + 1}">next</a>
+                </li>
+              </c:if>
+
+              <c:if test="${maker.pageInfo.pageNo != maker.finalPage}">
+                <li class="page-item">
+                  <a class="page-link" href="/board/list?pageNo=${maker.finalPage}">>></a>
+                </li>
+              </c:if>
 
             </ul>
           </nav>
 
         </div>
-      
-        
+        <!-- end div.bottom-section -->
 
-      </div> 
+      </div>
       <!-- end div.wrap -->
-
 
 
       <!-- 모달 창 -->
@@ -233,6 +241,25 @@
         document.querySelector('.add-btn').onclick = e => {
           window.location.href = '/board/write';
         };
+
+        function appendActivePage() {
+
+          // 1. 현재 위치한 페이지 번호를 알아낸다.
+          //  -> 주소창에 묻어있는 페이지 파라미터 숫자를 읽거나
+          //     서버에서 내려준 페이지번호를 읽는다.
+          const currentPage = '${maker.pageInfo.pageNo}';
+          console.log('현재페이지: ' + currentPage);
+
+          // 2. 해당 페이지번호와 일치하는 li태그를 탐색한다.
+          const $li = document.querySelector(`.pagination li[data-page-num="\${currentPage}"]`);
+
+          // 3. 해당 li태그에 class = active를 추가한다.
+          $li.classList.add('active');
+
+        }
+
+        appendActivePage();
+
 
 
 

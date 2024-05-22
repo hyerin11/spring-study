@@ -35,9 +35,6 @@ public class Page {
         this.amount = amount;
     }
 
-
-
-
     /*
     * <규칙 찾기>
 
