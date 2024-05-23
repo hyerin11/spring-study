@@ -1,6 +1,7 @@
 package com.study.springstudy.springmvc.chap04.mapper;
 
 import com.study.springstudy.springmvc.chap04.common.Page;
+import com.study.springstudy.springmvc.chap04.common.Search;
 import com.study.springstudy.springmvc.chap04.entity.Board;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -25,5 +26,5 @@ public interface BoardMapper {
     void upViewCount(int boardNo);
 
     // 총 게시물 수 조회
-    int count();
+    int count(Search search);
 }

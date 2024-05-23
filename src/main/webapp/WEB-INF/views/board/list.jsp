@@ -5,7 +5,7 @@
 
     <head>
       <meta charset="UTF-8">
-      <title>Insert title here</title>
+      <title>Board</title>
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
 
       <style>
         .card-container .card .card-title-wrapper .time-view-wrapper>div.hit {
-          background: rgb(255, 255, 163);
+          background: yellow;
         }
       </style>
 
@@ -37,7 +37,7 @@
       <div id="wrap">
 
         <div class="main-title-wrapper">
-          <h1 class="main-title">게시판</h1>
+          <h1 class="main-title">꾸러기 게시판</h1>
           <button class="add-btn">새 글 쓰기</button>
         </div>
 
@@ -47,14 +47,14 @@
           <div class="search">
             <form action="/board/list" method="get">
 
-              <select class="form-select" name="" id="search-type">
+              <select class="form-select" name="type" id="search-type">
                 <option value="title" selected>제목</option>
                 <option value="content">내용</option>
                 <option value="writer">작성자</option>
                 <option value="tc">제목+내용</option>
               </select>
 
-              <input type="text" class="form-control" name="">
+              <input type="text" class="form-control" name="keyword">
 
               <button class="btn btn-primary" type="submit">
                 <i class="fas fa-search"></i>
@@ -62,6 +62,13 @@
 
             </form>
           </div>
+
+          <div class="amount">
+            <div><a href="#">6</a></div>
+            <div><a href="#">18</a></div>
+            <div><a href="#">30</a></div>
+          </div>
+
         </div>
 
         <div class="card-container">
@@ -114,10 +121,10 @@
           <!-- 페이지 버튼 영역 -->
           <nav aria-label="Page navigation example">
             <ul class="pagination pagination-lg pagination-custom">
-              
+
               <c:if test="${maker.pageInfo.pageNo != 1}">
                 <li class="page-item">
-                  <a class="page-link" href="/board/list?pageNo=1"><<</a>
+                  <a class="page-link" href="/board/list?pageNo=1"> &lt;&lt; </a>
                 </li>
               </c:if>
 
@@ -141,7 +148,7 @@
 
               <c:if test="${maker.pageInfo.pageNo != maker.finalPage}">
                 <li class="page-item">
-                  <a class="page-link" href="/board/list?pageNo=${maker.finalPage}">>></a>
+                  <a class="page-link" href="/board/list?pageNo=${maker.finalPage}"> &gt;&gt; </a>
                 </li>
               </c:if>
 
