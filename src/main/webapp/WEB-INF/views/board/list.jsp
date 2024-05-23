@@ -54,7 +54,7 @@
                 <option value="tc">제목+내용</option>
               </select>
 
-              <input type="text" class="form-control" name="keyword">
+              <input type="text" class="form-control" name="keyword" value="${s.keyword}">
 
               <button class="btn btn-primary" type="submit">
                 <i class="fas fa-search"></i>
@@ -73,6 +73,13 @@
 
         <div class="card-container">
 
+
+          <c:if test="${bList.size() == 0}">
+            <div class="empty">검색한 게시물이 존재하지 않습니다!</div>  
+          </c:if>
+
+
+        <c:if test="${bList.size() > 0}">
           <c:forEach var="b" items="${bList}">
             <div class="card-wrapper">
               <section class="card" data-bno="${b.bno}">
@@ -110,6 +117,7 @@
             </div>
             <!-- end div.card-wrapper -->
           </c:forEach>
+        </c:if>
 
 
         </div>
@@ -284,11 +292,26 @@
           const $li = document.querySelector(`.pagination li[data-page-num="\${currentPage}"]`);
 
           // 3. 해당 li태그에 class = active를 추가한다.
-          $li.classList.add('active');
+          $li?.classList.add('active');
+          //li가 아니면 => $li?
+        }
 
+        //기존 검색 조건 option 태그 고정하기
+        function fixSearchOption(){
+
+          // 1. 방금 전 어떤 조건을 검색했는지 값을 알아와야 한다.
+          const type = '${s.type}';
+          console.log('type: ' + type);
+
+          // 2. 해당 조건을 가진 option 태그를 검색
+          const $option = document.querySelector(`#search-type option[value='\${type}']`);
+
+          // 3. 해당 태그에 selected 속성 부여
+          $option?.setAttribute('selected', 'selected');
         }
 
         appendActivePage();
+        fixSearchOption();
 
 
 
