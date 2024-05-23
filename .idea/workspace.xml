@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#mybatis4_게시물 검색#1(검색창)">
+    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#mybatis4_게시물 검색#1(검색창)_검색타입까지 저장해서 페이지 넘기기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
@@ -586,7 +586,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716424204507</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="#mybatis4_게시물 검색#1(검색창)_검색타입까지 저장해서 페이지 넘기기">
+      <option name="closed" value="true" />
+      <created>1716424542919</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1716424542919</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +609,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="#SpringMVC - Lombok 점수관리 프로그램" />
     <MESSAGE value="#SpringMVC - Lombok student" />
     <MESSAGE value="#SpringMVC - @Test 하기" />
     <MESSAGE value="#SpringMVC - @Test_삽입, 조회, 삭제, 업데이트, 다중행 조회, 단일행 조회" />
@@ -626,7 +633,8 @@
     <MESSAGE value="#mybatis4_게시물 검색#1" />
     <MESSAGE value="#mybatis4_게시물 검색#1(타입별)" />
     <MESSAGE value="#mybatis4_게시물 검색#1(검색창)" />
-    <option name="LAST_COMMIT_MESSAGE" value="#mybatis4_게시물 검색#1(검색창)" />
+    <MESSAGE value="#mybatis4_게시물 검색#1(검색창)_검색타입까지 저장해서 페이지 넘기기" />
+    <option name="LAST_COMMIT_MESSAGE" value="#mybatis4_게시물 검색#1(검색창)_검색타입까지 저장해서 페이지 넘기기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

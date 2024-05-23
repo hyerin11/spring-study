@@ -79,7 +79,7 @@ public class BoardController {
 
     // 5. 게시글 상세 조회 요청 (/board/detail : GET)
     @GetMapping("/detail")
-    public String detail(int bno, Model model) {
+    public String detail(int bno, @ModelAttribute("s") Search search, Model model) {
         System.out.println("/board/detail GET");
 
         // 1. 상세조회하고 싶은 글번호를 읽기
