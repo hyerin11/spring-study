@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#mybatis4_게시물 검색#1(검색창)_검색기록 유지하기_세부조정(검색창에 이전기록 남아있기)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardFindAllDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/ReplyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/entity/Reply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ReplyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/chap05/ReplyMapperTest.java" afterDir="false" />
+    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#게시판_댓글_비동기통신_1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardListResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardListResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/entity/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/entity/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/mapper/BoardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/mapper/BoardMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardDetailResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardDetailResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +94,7 @@
     "JUnit.PersonMapperTest.findOneTest.executor": "Run",
     "JUnit.PersonMapperTest.saveTest.executor": "Run",
     "JUnit.PersonMapperTest.updateTest.executor": "Run",
+    "JUnit.ReplyMapperTest.deleteTest.executor": "Run",
     "JUnit.ReplyMapperTest.executor": "Run",
     "JUnit.ScoreMapperTest.findAllTest.executor": "Run",
     "JUnit.ScoreMapperTest.findOneTest.executor": "Run",
@@ -629,7 +621,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716427904177</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="#게시판_댓글_비동기통신_1">
+      <option name="closed" value="true" />
+      <created>1716434853870</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1716434853870</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -644,7 +644,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="#SpringMVC - 점수 삽입, 조회, 변경, 삭제" />
     <MESSAGE value="#SpringMVC - Board_1차완료_목록조회, 화면 열기,  등록 요청" />
     <MESSAGE value="#SpringMVC - 게시판앱2" />
     <MESSAGE value="#SpringMVC - 게시판앱3" />
@@ -669,7 +668,8 @@
     <MESSAGE value="#mybatis4_게시물 검색#1(검색창)_검색기록 유지하기_방법1" />
     <MESSAGE value="#mybatis4_게시물 검색#1(검색창)_검색기록 유지하기_방법2_referer" />
     <MESSAGE value="#mybatis4_게시물 검색#1(검색창)_검색기록 유지하기_세부조정(검색창에 이전기록 남아있기)" />
-    <option name="LAST_COMMIT_MESSAGE" value="#mybatis4_게시물 검색#1(검색창)_검색기록 유지하기_세부조정(검색창에 이전기록 남아있기)" />
+    <MESSAGE value="#게시판_댓글_비동기통신_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="#게시판_댓글_비동기통신_1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
