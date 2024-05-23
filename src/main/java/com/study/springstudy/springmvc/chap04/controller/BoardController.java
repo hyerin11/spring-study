@@ -12,10 +12,7 @@ import com.study.springstudy.springmvc.chap04.service.BoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +28,7 @@ public class BoardController {
 
     // 1. 목록 조회 요청 (/board/list : GET)
     @GetMapping("/list")
-    public String list(Search page, Model model) {
+    public String list( @ModelAttribute("s") Search page, Model model) {
         System.out.println("/board/list GET");
 
         // 서비스에게 조회 요청 위임
@@ -42,6 +39,8 @@ public class BoardController {
         // 3. JSP파일에 해당 목록데이터를 보냄
         model.addAttribute("bList", bList);
         model.addAttribute("maker", maker);
+        //model.addAttribute("s", page);
+        //@ModelAttribute("s") Search page와 같은 것!이라 생략
 
         return "board/list";
     }
