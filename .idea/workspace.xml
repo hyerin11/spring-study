@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#게시판_클라이언트사이드렌더링_댓글#1_댓글목록조회요청">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/LogExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/LogExampleTest.java" afterDir="false" />
+    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#게시판_클라이언트사이드렌더링_댓글#1_로그(기록)남기기_logging">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/request/ReplyPostDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +45,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -255,14 +254,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715582901055</updated>
-    </task>
-    <task id="LOCAL-00005" summary="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV2">
-      <option name="closed" value="true" />
-      <created>1715670726492</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1715670726492</updated>
     </task>
     <task id="LOCAL-00006" summary="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV3">
       <option name="closed" value="true" />
@@ -648,7 +639,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716519507860</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="#게시판_클라이언트사이드렌더링_댓글#1_로그(기록)남기기_logging">
+      <option name="closed" value="true" />
+      <created>1716521879953</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1716521879953</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -663,7 +662,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="#SpringMVC - 사진" />
     <MESSAGE value="#3 tier architecture - part1" />
     <MESSAGE value="#3 tier architecture - part2" />
     <MESSAGE value="#3 tier architecture - part3" />
@@ -688,7 +686,8 @@
     <MESSAGE value="#클라이언트사이드렌더링#2" />
     <MESSAGE value="#클라이언트사이드렌더링_ResponseEntity" />
     <MESSAGE value="#게시판_클라이언트사이드렌더링_댓글#1_댓글목록조회요청" />
-    <option name="LAST_COMMIT_MESSAGE" value="#게시판_클라이언트사이드렌더링_댓글#1_댓글목록조회요청" />
+    <MESSAGE value="#게시판_클라이언트사이드렌더링_댓글#1_로그(기록)남기기_logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="#게시판_클라이언트사이드렌더링_댓글#1_로그(기록)남기기_logging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
