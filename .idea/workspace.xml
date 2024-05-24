@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#클라이언트사이드렌더링_ResponseEntity">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/response/ReplyDetailDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" afterDir="false" />
+    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#게시판_클라이언트사이드렌더링_댓글#1_댓글목록조회요청">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/LogExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/LogExampleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/ReplyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/mapper/ReplyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ReplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ReplyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/chap05/ReplyMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/chap05/ReplyMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +46,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -91,6 +88,7 @@
     "JUnit.BoardMapperTest.saveFile.executor": "Run",
     "JUnit.HotelSpringDITest.diTest.executor": "Run",
     "JUnit.HotelSpringDITest.executor": "Run",
+    "JUnit.LogExampleTest.executor": "Run",
     "JUnit.PersonMapperTest.delTest.executor": "Run",
     "JUnit.PersonMapperTest.executor": "Run",
     "JUnit.PersonMapperTest.findAllTest.executor": "Run",
@@ -148,18 +146,18 @@
       <recent name="E:\springmvc\springstudy\src\main" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.study.springstudy.springmvc" />
       <recent name="com.study.springstudy.springmvc.chap05" />
       <recent name="com.study.springstudy.springmvc.chap04.mapper" />
       <recent name="com.study.springstudy.springmvc.chap04.service" />
       <recent name="com.study.springstudy.springmvc.chap03.mapper" />
-      <recent name="com.study.springstudy.database.chap02" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.study.springstudy.webservlet.chap02.v3.controller" />
       <recent name="com.study.springstudy.webservlet.chap02.v2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReplyMapperTest.findAllTest">
+  <component name="RunManager">
     <configuration name="BoardMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springstudy.test" />
       <extension name="coverage">
@@ -257,14 +255,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715582901055</updated>
-    </task>
-    <task id="LOCAL-00004" summary="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV1_2완료">
-      <option name="closed" value="true" />
-      <created>1715668116062</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1715668116062</updated>
     </task>
     <task id="LOCAL-00005" summary="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV2">
       <option name="closed" value="true" />
@@ -650,7 +640,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716516639858</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="#게시판_클라이언트사이드렌더링_댓글#1_댓글목록조회요청">
+      <option name="closed" value="true" />
+      <created>1716519507860</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1716519507860</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -665,7 +663,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="#SpringMVC - 게시판앱4_조회수" />
     <MESSAGE value="#SpringMVC - 사진" />
     <MESSAGE value="#3 tier architecture - part1" />
     <MESSAGE value="#3 tier architecture - part2" />
@@ -690,7 +687,8 @@
     <MESSAGE value="#클라이언트사이드렌더링#1" />
     <MESSAGE value="#클라이언트사이드렌더링#2" />
     <MESSAGE value="#클라이언트사이드렌더링_ResponseEntity" />
-    <option name="LAST_COMMIT_MESSAGE" value="#클라이언트사이드렌더링_ResponseEntity" />
+    <MESSAGE value="#게시판_클라이언트사이드렌더링_댓글#1_댓글목록조회요청" />
+    <option name="LAST_COMMIT_MESSAGE" value="#게시판_클라이언트사이드렌더링_댓글#1_댓글목록조회요청" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
