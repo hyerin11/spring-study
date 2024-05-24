@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#게시판_댓글_비동기통신_2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/rest/RestController.java" afterDir="false" />
+    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#클라이언트사이드렌더링#1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/rest/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/rest/RestApiController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,14 +250,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715582901055</updated>
-    </task>
-    <task id="LOCAL-00001" summary="#Spring">
-      <option name="closed" value="true" />
-      <created>1715661931803</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1715661931803</updated>
     </task>
     <task id="LOCAL-00002" summary="#Spring_2">
       <option name="closed" value="true" />
@@ -643,7 +635,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716444922667</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="#클라이언트사이드렌더링#1">
+      <option name="closed" value="true" />
+      <created>1716512350481</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1716512350482</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -658,7 +658,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="#SpringMVC - 게시판앱2" />
     <MESSAGE value="#SpringMVC - 게시판앱3" />
     <MESSAGE value="#SpringMVC - 게시판앱4_삭제" />
     <MESSAGE value="#SpringMVC - 게시판앱4_조회수" />
@@ -683,7 +682,8 @@
     <MESSAGE value="#mybatis4_게시물 검색#1(검색창)_검색기록 유지하기_세부조정(검색창에 이전기록 남아있기)" />
     <MESSAGE value="#게시판_댓글_비동기통신_1" />
     <MESSAGE value="#게시판_댓글_비동기통신_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="#게시판_댓글_비동기통신_2" />
+    <MESSAGE value="#클라이언트사이드렌더링#1" />
+    <option name="LAST_COMMIT_MESSAGE" value="#클라이언트사이드렌더링#1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
