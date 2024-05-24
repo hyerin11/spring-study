@@ -7,11 +7,10 @@ import com.study.springstudy.springmvc.chap04.common.Search;
 import com.study.springstudy.springmvc.chap04.dto.BoardListResponseDto;
 import com.study.springstudy.springmvc.chap04.service.BoardService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.List;
@@ -71,7 +70,59 @@ public class RestApiController {
          - 클라이언트에게 응답할 때는 메시지 바디안에 들어 있는 데이터도 중요하지만
          - 상태코드와 헤더정보를 포함해야 한다
          - 근데 일반 리턴타입은 상태코드와 헤더정보를 전송하기 어렵다
+
+         @RestController가 있다면 리턴타입은
+        @GetMapping("/person")
+            public ResponseEntity<?> people(){
+            }
+             return ResponseEntity
+                //.status(400)    .상태✨
+                .ok() //200
+                .body(people);    .body✨
+    }
+            고정한다!!
      */
+
+    @GetMapping("/people")
+    public ResponseEntity<?> people(){
+        Person p1 = new Person(111, "뽀로로", 30);
+        Person p2 = new Person(222, "크롱", 40);
+        Person p3 = new Person(333, "루피", 50);
+
+        List<Person> people = List.of(p1, p2, p3);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("myPet", "cat");
+        headers.add("money", "100");
+
+        return ResponseEntity
+                //.status(400)
+                .ok() //200
+                .headers(headers)
+                .body(people);
+    }
+
+    @GetMapping("/bmi")
+    public ResponseEntity<?> bmi(
+            @RequestParam(required = false) Double cm,
+            @RequestParam(required = false) Double kg
+    ) {
+        
+        if(cm == null || kg == null) {
+            return ResponseEntity
+                    .badRequest()
+                    .body("키와 몸무게를 알려주세요╰(*°▽°*)╯");
+        }
+        
+        double m = cm / 100;
+        double bmi = kg / (m * m);
+
+        return ResponseEntity
+                .ok()
+                .body(bmi);
+    }
+
+
 
 
 }
