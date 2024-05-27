@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="#게시판_클라이언트사이드렌더링_댓글#1_로그(기록)남기기_logging">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/request/ReplyPostDto.java" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="#댓글 api등록 기능">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/request/ReplyPostDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/request/ReplyPostDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/response/ReplyDetailDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/response/ReplyDetailDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/mapper/ReplyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/mapper/ReplyMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +47,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="jsp template" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
@@ -52,24 +57,34 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
+    &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;hyerin11&quot;
-  }
-}</component>
+    &quot;assignee&quot;: &quot;soongu&quot;
+    }
+    }</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/hyerin11/spring-study.git&quot;,
-    &quot;accountId&quot;: &quot;f0e4322d-b74f-43d4-8979-a57715704c7e&quot;
-  }
-}</component>
+    &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/soongu/spring-study202405.git&quot;,
+    &quot;accountId&quot;: &quot;8c32816b-481d-4ea8-902a-b914d19683df&quot;
+    }
+    }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.3.26/539e1d03decbec523b7ad87fb786fd0b1cf29ce/spring-webmvc-5.3.26.jar!/org/springframework/web/servlet/HandlerMapping.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="KubernetesApiProvider">{
+    &quot;isMigrated&quot;: true
+    }</component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2gOyQC1cjU2meGmYV7gnrvnEXnB" />
+    &quot;customColor&quot;: &quot;&quot;,
+    &quot;associatedIndex&quot;: 2
+    }</component>
+  <component name="ProjectId" id="2gOyQqowV2QHiX1Qjh9lU37MQSm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -78,143 +93,116 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Gradle.HotelDiTest.diTest.executor": "Run",
-    "Gradle.HotelTest.executor": "Run",
+    "Gradle.HotelTest.hotelTest.executor": "Run",
     "Gradle.springstudy [:Main.main()].executor": "Run",
-    "Gradle.소스 다운로드.executor": "Run",
-    "JUnit.BoardMapperTest.executor": "Run",
+    "Gradle.springstudy [clean].executor": "Run",
+    "HTTP 요청.generated-requests | #6.executor": "Run",
     "JUnit.BoardMapperTest.insertTest.executor": "Run",
-    "JUnit.BoardMapperTest.saveFile.executor": "Run",
+    "JUnit.BoardRepositoryImplTest.deleteTest.executor": "Run",
+    "JUnit.BoardRepositoryImplTest.findAll.executor": "Run",
+    "JUnit.BoardRepositoryImplTest.saveTest.executor": "Run",
     "JUnit.HotelSpringDITest.diTest.executor": "Run",
-    "JUnit.HotelSpringDITest.executor": "Run",
-    "JUnit.LogExampleTest.executor": "Run",
+    "JUnit.LogExampleTest.logTest.executor": "Run",
     "JUnit.PersonMapperTest.delTest.executor": "Run",
-    "JUnit.PersonMapperTest.executor": "Run",
     "JUnit.PersonMapperTest.findAllTest.executor": "Run",
     "JUnit.PersonMapperTest.findNamesTest.executor": "Run",
     "JUnit.PersonMapperTest.findOneTest.executor": "Run",
     "JUnit.PersonMapperTest.saveTest.executor": "Run",
     "JUnit.PersonMapperTest.updateTest.executor": "Run",
+    "JUnit.PersonTest.test.executor": "Run",
+    "JUnit.ReplyMapperTest.bulkInsert.executor": "Run",
     "JUnit.ReplyMapperTest.deleteTest.executor": "Run",
-    "JUnit.ReplyMapperTest.executor": "Run",
     "JUnit.ReplyMapperTest.findAllTest.executor": "Run",
+    "JUnit.ReplyMapperTest.modifyTest.executor": "Run",
     "JUnit.ScoreMapperTest.findAllTest.executor": "Run",
     "JUnit.ScoreMapperTest.findOneTest.executor": "Run",
     "JUnit.ScoreMapperTest.rankTest.executor": "Run",
     "JUnit.SpringJdbcTest.deleteTest.executor": "Run",
     "JUnit.SpringJdbcTest.findAllTest.executor": "Run",
     "JUnit.SpringJdbcTest.findOneTest.executor": "Run",
+    "JUnit.SpringJdbcTest.modifyTest.executor": "Run",
     "JUnit.SpringJdbcTest.saveTest.executor": "Run",
     "JUnit.StudentTest.sTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/springmvc/springstudy/src/main/java/com/study/springstudy/core/chap04",
-    "onboarding.tips.debug.path": "E:/springmvc/springstudy/src/main/java/com/study/Main.java",
+    "last_opened_file_path": "/Users/superstar/Desktop/develop/springstudy",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/superstar/Desktop/develop/springstudy/src/main/java/com/study/Main.java",
     "project.structure.last.edited": "프로젝트",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "copyright",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true",
     "애플리케이션.Main.executor": "Run"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.study.springstudy.springmvc.chap03.service" />
       <recent name="com.study.springstudy.database.chap01" />
       <recent name="com.study.springstudy.springmvc.chap03.entity" />
       <recent name="com.study.springstudy.chap02" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\springmvc\springstudy\src\main\java\com\study\springstudy\core\chap04" />
-      <recent name="E:\springmvc\springstudy\src\main\java\com\study\springstudy\webservlet\chap02\v2" />
-      <recent name="E:\springmvc\springstudy\src\main\java\com\study\springstudy\chap03" />
-      <recent name="E:\springmvc\springstudy\src\main\java\com\study\springstudy\chap02" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/assets/img" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap04" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v2" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/study/springstudy" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\springmvc\springstudy\src\main\resources\static\assets\img" />
-      <recent name="E:\springmvc\springstudy\src\main\resources\static" />
-      <recent name="E:\springmvc\springstudy\src\main\resources\assets" />
-      <recent name="E:\springmvc\springstudy\src\main\webapp\WEB-INF" />
-      <recent name="E:\springmvc\springstudy\src\main" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.study.springstudy.springmvc" />
       <recent name="com.study.springstudy.springmvc.chap05" />
       <recent name="com.study.springstudy.springmvc.chap04.mapper" />
-      <recent name="com.study.springstudy.springmvc.chap04.service" />
       <recent name="com.study.springstudy.springmvc.chap03.mapper" />
+      <recent name="com.study.springstudy.database.chap02" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.study.springstudy.webservlet.chap02.v3.controller" />
+      <recent name="com.study.springstudy.webservlet.chap02.v2.controller" />
       <recent name="com.study.springstudy.webservlet.chap02.v2" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="BoardMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springstudy.test" />
+  <component name="RunManager" selected="애플리케이션.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.Main" />
+      <module name="springstudy.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.study.springstudy.springmvc.chap04.mapper.*" />
+          <option name="PATTERN" value="com.study.springstudy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap04.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap04.mapper.BoardMapperTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoardMapperTest.insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springstudy.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.study.springstudy.springmvc.chap04.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap04.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap04.mapper.BoardMapperTest" />
-      <option name="METHOD_NAME" value="insertTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="단일 요청 실행">
+      <method v="2" />
     </configuration>
-    <configuration name="BoardMapperTest.saveFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LogExampleTest.logTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springstudy.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.study.springstudy.springmvc.chap04.mapper.*" />
+          <option name="PATTERN" value="com.study.springstudy.springmvc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap04.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap04.mapper.BoardMapperTest" />
-      <option name="METHOD_NAME" value="saveFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReplyMapperTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springstudy.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.study.springstudy.springmvc.chap05.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap05" />
-      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap05.ReplyMapperTest" />
-      <option name="METHOD_NAME" value="deleteTest" />
+      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc" />
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.LogExampleTest" />
+      <option name="METHOD_NAME" value="logTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -236,419 +224,350 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReplyMapperTest.modifyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springstudy.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.springstudy.springmvc.chap05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap05" />
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap05.ReplyMapperTest" />
+      <option name="METHOD_NAME" value="modifyTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springstudy.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.springstudy.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="JUnit.LogExampleTest.logTest" />
         <item itemvalue="JUnit.ReplyMapperTest.findAllTest" />
-        <item itemvalue="JUnit.ReplyMapperTest.deleteTest" />
-        <item itemvalue="JUnit.BoardMapperTest" />
-        <item itemvalue="JUnit.BoardMapperTest.insertTest" />
-        <item itemvalue="JUnit.BoardMapperTest.saveFile" />
+        <item itemvalue="JUnit.ReplyMapperTest.modifyTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="8ba4aa09-1679-4f15-b566-669489a6de0c" name="변경" comment="" />
-      <created>1715582901055</created>
+      <changelist id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="" />
+      <created>1715582906822</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1715582901055</updated>
+      <updated>1715582906822</updated>
+      <workItem from="1716528901753" duration="151000" />
+      <workItem from="1716767867006" duration="45000" />
     </task>
-    <task id="LOCAL-00006" summary="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV3">
+    <task id="LOCAL-00001" summary="프론트 컨트롤러 패턴 part1">
       <option name="closed" value="true" />
-      <created>1715675026442</created>
+      <created>1715666804644</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715666804644</updated>
+    </task>
+    <task id="LOCAL-00002" summary="프론트 컨트롤러 패턴 part2">
+      <option name="closed" value="true" />
+      <created>1715669499993</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715669499993</updated>
+    </task>
+    <task id="LOCAL-00003" summary="프론트 컨트롤러 패턴 part3">
+      <option name="closed" value="true" />
+      <created>1715674213004</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715674213004</updated>
+    </task>
+    <task id="LOCAL-00004" summary="프론트 컨트롤러 패턴 part4">
+      <option name="closed" value="true" />
+      <created>1715819433679</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715819433679</updated>
+    </task>
+    <task id="LOCAL-00005" summary="프론트 컨트롤러 패턴 part5">
+      <option name="closed" value="true" />
+      <created>1715820965752</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715820965752</updated>
+    </task>
+    <task id="LOCAL-00006" summary="spring mvc 요청처리 1">
+      <option name="closed" value="true" />
+      <created>1715824659140</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1715675026442</updated>
+      <updated>1715824659140</updated>
     </task>
-    <task id="LOCAL-00007" summary="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV3_">
+    <task id="LOCAL-00007" summary="spring mvc 요청처리 2">
       <option name="closed" value="true" />
-      <created>1715675061968</created>
+      <created>1715831168444</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1715675061968</updated>
+      <updated>1715831168444</updated>
     </task>
-    <task id="LOCAL-00008" summary="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV3_오류수정">
+    <task id="LOCAL-00008" summary="spring mvc - 성적관리앱 1">
       <option name="closed" value="true" />
-      <created>1715675277522</created>
+      <created>1715839447622</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1715675277522</updated>
+      <updated>1715839447622</updated>
     </task>
-    <task id="LOCAL-00009" summary="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV3_오류수정_">
+    <task id="LOCAL-00009" summary="spring mvc - 성적관리앱 2">
       <option name="closed" value="true" />
-      <created>1715675325693</created>
+      <created>1715841439299</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1715675325693</updated>
+      <updated>1715841439299</updated>
     </task>
-    <task id="LOCAL-00010" summary="#Spring_3_회원가입 정보 저장하기_리펙토링_FrontControllerV4_delete기능_detail기능 추가">
+    <task id="LOCAL-00010" summary="spring mvc - 성적관리앱 3">
       <option name="closed" value="true" />
-      <created>1715821439529</created>
+      <created>1715845483218</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1715821439530</updated>
+      <updated>1715845483218</updated>
     </task>
-    <task id="LOCAL-00011" summary="#SpringMVC 요청처리1">
+    <task id="LOCAL-00011" summary="spring mvc - 성적관리앱 4">
       <option name="closed" value="true" />
-      <created>1715824677511</created>
+      <created>1715911049313</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1715824677511</updated>
+      <updated>1715911049313</updated>
     </task>
-    <task id="LOCAL-00012" summary="#SpringMVC 로그인/비번">
+    <task id="LOCAL-00012" summary="spring mvc - 스프링 JDBC">
       <option name="closed" value="true" />
-      <created>1715831366227</created>
+      <created>1715917620358</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1715831366227</updated>
+      <updated>1715917620358</updated>
     </task>
-    <task id="LOCAL-00013" summary="#SpringMVC 성적관리앱_db연결">
+    <task id="LOCAL-00013" summary="spring mvc - 스프링 JDBC 2">
       <option name="closed" value="true" />
-      <created>1715841667806</created>
+      <created>1715923939373</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1715841667806</updated>
+      <updated>1715923939373</updated>
     </task>
-    <task id="LOCAL-00014" summary="#SpringMVC 성적관리앱2_detail, rank">
+    <task id="LOCAL-00014" summary="spring mvc - 게시판 앱 1">
       <option name="closed" value="true" />
-      <created>1715845638272</created>
+      <created>1715925484960</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1715845638272</updated>
+      <updated>1715925484960</updated>
     </task>
-    <task id="LOCAL-00015" summary="#SpringMVC 의존성 문제 해결">
+    <task id="LOCAL-00015" summary="spring mvc - 게시판 앱 2">
       <option name="closed" value="true" />
-      <created>1715905143182</created>
+      <created>1716166694453</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1715905143182</updated>
+      <updated>1716166694453</updated>
     </task>
-    <task id="LOCAL-00016" summary="#SpringMVC - Lombok">
+    <task id="LOCAL-00016" summary="spring mvc - 게시판 앱 3">
       <option name="closed" value="true" />
-      <created>1715909619993</created>
+      <created>1716169394194</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1715909619993</updated>
+      <updated>1716169394194</updated>
     </task>
-    <task id="LOCAL-00017" summary="#SpringMVC - Lombok 사용한 호텔레스토랑 예시">
+    <task id="LOCAL-00017" summary="spring mvc - 게시판 앱 4">
       <option name="closed" value="true" />
-      <created>1715913991935</created>
+      <created>1716172990822</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1715913991935</updated>
+      <updated>1716172990822</updated>
     </task>
-    <task id="LOCAL-00018" summary="#SpringMVC - Lombok 점수관리 프로그램">
+    <task id="LOCAL-00018" summary="spring mvc - 게시판 앱 5">
       <option name="closed" value="true" />
-      <created>1715914046552</created>
+      <created>1716173396677</created>
       <option name="number" value="00018" />
       <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1715914046552</updated>
+      <updated>1716173396677</updated>
     </task>
-    <task id="LOCAL-00019" summary="#SpringMVC - Lombok student">
+    <task id="LOCAL-00019" summary="3 tier architecture - part1">
       <option name="closed" value="true" />
-      <created>1715914083755</created>
+      <created>1716177024022</created>
       <option name="number" value="00019" />
       <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
-      <updated>1715914083755</updated>
+      <updated>1716177024022</updated>
     </task>
-    <task id="LOCAL-00020" summary="#SpringMVC - @Test 하기">
+    <task id="LOCAL-00020" summary="3 tier architecture - part2">
       <option name="closed" value="true" />
-      <created>1715917005393</created>
+      <created>1716182242825</created>
       <option name="number" value="00020" />
       <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1715917005393</updated>
+      <updated>1716182242825</updated>
     </task>
-    <task id="LOCAL-00021" summary="#SpringMVC - @Test_삽입, 조회, 삭제, 업데이트, 다중행 조회, 단일행 조회">
+    <task id="LOCAL-00021" summary="3 tier architecture - part3">
       <option name="closed" value="true" />
-      <created>1715917658576</created>
+      <created>1716185279059</created>
       <option name="number" value="00021" />
       <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
-      <updated>1715917658576</updated>
+      <updated>1716185279059</updated>
     </task>
-    <task id="LOCAL-00022" summary="#SpringMVC - 점수 삽입, 조회, 변경, 삭제">
+    <task id="LOCAL-00022" summary="마이바티스 part1">
       <option name="closed" value="true" />
-      <created>1715934319284</created>
+      <created>1716259944025</created>
       <option name="number" value="00022" />
       <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
-      <updated>1715934319284</updated>
+      <updated>1716259944025</updated>
     </task>
-    <task id="LOCAL-00023" summary="#SpringMVC - Board_1차완료_목록조회, 화면 열기,  등록 요청">
+    <task id="LOCAL-00023" summary="마이바티스 part2">
       <option name="closed" value="true" />
-      <created>1715935405098</created>
+      <created>1716260351205</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1715935405098</updated>
+      <updated>1716260351205</updated>
     </task>
-    <task id="LOCAL-00024" summary="#SpringMVC - 게시판앱2">
+    <task id="LOCAL-00024" summary="마이바티스 part3">
       <option name="closed" value="true" />
-      <created>1716167127845</created>
+      <created>1716274373880</created>
       <option name="number" value="00024" />
       <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1716167127845</updated>
+      <updated>1716274373880</updated>
     </task>
-    <task id="LOCAL-00025" summary="#SpringMVC - 게시판앱3">
+    <task id="LOCAL-00025" summary="페이징 기초">
       <option name="closed" value="true" />
-      <created>1716169678732</created>
+      <created>1716339036952</created>
       <option name="number" value="00025" />
       <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1716169678732</updated>
+      <updated>1716339036952</updated>
     </task>
-    <task id="LOCAL-00026" summary="#SpringMVC - 게시판앱4_삭제">
+    <task id="LOCAL-00026" summary="페이징 렌더링 알고리즘 1">
       <option name="closed" value="true" />
-      <created>1716173152795</created>
+      <created>1716342968818</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1716173152795</updated>
+      <updated>1716342968818</updated>
     </task>
-    <task id="LOCAL-00027" summary="#SpringMVC - 게시판앱4_조회수">
+    <task id="LOCAL-00027" summary="페이징 렌더링 알고리즘 2 - 마지막 구간 끝페이지 보정">
       <option name="closed" value="true" />
-      <created>1716173647840</created>
+      <created>1716344734520</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1716173647840</updated>
+      <updated>1716344734520</updated>
     </task>
-    <task id="LOCAL-00028" summary="#SpringMVC - 사진">
+    <task id="LOCAL-00028" summary="페이징 렌더링 알고리즘 3 - 이전, 다음 활성화">
       <option name="closed" value="true" />
-      <created>1716174044416</created>
+      <created>1716345627391</created>
       <option name="number" value="00028" />
       <option name="presentableId" value="LOCAL-00028" />
       <option name="project" value="LOCAL" />
-      <updated>1716174044416</updated>
+      <updated>1716345627391</updated>
     </task>
-    <task id="LOCAL-00029" summary="#3 tier architecture - part1">
+    <task id="LOCAL-00029" summary="페이징 렌더링 알고리즘 4 - 맨처음, 맨끝이동, 페이지 액티브 활성화">
       <option name="closed" value="true" />
-      <created>1716180746716</created>
+      <created>1716349460689</created>
       <option name="number" value="00029" />
       <option name="presentableId" value="LOCAL-00029" />
       <option name="project" value="LOCAL" />
-      <updated>1716180746716</updated>
+      <updated>1716349460689</updated>
     </task>
-    <task id="LOCAL-00030" summary="#3 tier architecture - part2">
+    <task id="LOCAL-00030" summary="검색 처리 part1 - 제목으로 검색">
       <option name="closed" value="true" />
-      <created>1716182384599</created>
+      <created>1716355956136</created>
       <option name="number" value="00030" />
       <option name="presentableId" value="LOCAL-00030" />
       <option name="project" value="LOCAL" />
-      <updated>1716182384599</updated>
+      <updated>1716355956136</updated>
     </task>
-    <task id="LOCAL-00031" summary="#3 tier architecture - part3">
+    <task id="LOCAL-00031" summary="검색 처리 part2 - 클라이언트 처리">
       <option name="closed" value="true" />
-      <created>1716186181972</created>
+      <created>1716425963493</created>
       <option name="number" value="00031" />
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
-      <updated>1716186181972</updated>
+      <updated>1716425963493</updated>
     </task>
-    <task id="LOCAL-00032" summary="#mybatis">
+    <task id="LOCAL-00032" summary="검색 처리 part3 - 디테일 처리">
       <option name="closed" value="true" />
-      <created>1716260160223</created>
+      <created>1716427756087</created>
       <option name="number" value="00032" />
       <option name="presentableId" value="LOCAL-00032" />
       <option name="project" value="LOCAL" />
-      <updated>1716260160223</updated>
+      <updated>1716427756087</updated>
     </task>
-    <task id="LOCAL-00033" summary="#mybatis2_board">
+    <task id="LOCAL-00033" summary="댓글 기능 part1 - 게시물 총 댓글수 표기">
       <option name="closed" value="true" />
-      <created>1716273109467</created>
+      <created>1716433244828</created>
       <option name="number" value="00033" />
       <option name="presentableId" value="LOCAL-00033" />
       <option name="project" value="LOCAL" />
-      <updated>1716273109467</updated>
+      <updated>1716433244828</updated>
     </task>
-    <task id="LOCAL-00034" summary="#mybatis3_board_hit/new기능 추가">
+    <task id="LOCAL-00034" summary="댓글 기능 part2 - 매퍼 테스트">
       <option name="closed" value="true" />
-      <created>1716274576957</created>
+      <created>1716435687882</created>
       <option name="number" value="00034" />
       <option name="presentableId" value="LOCAL-00034" />
       <option name="project" value="LOCAL" />
-      <updated>1716274576957</updated>
+      <updated>1716435687882</updated>
     </task>
-    <task id="LOCAL-00035" summary="#mybatis3_board_hit/new기능 추가_수정">
+    <task id="LOCAL-00035" summary="REST API 기초">
       <option name="closed" value="true" />
-      <created>1716337608267</created>
+      <created>1716512344151</created>
       <option name="number" value="00035" />
       <option name="presentableId" value="LOCAL-00035" />
       <option name="project" value="LOCAL" />
-      <updated>1716337608268</updated>
+      <updated>1716512344151</updated>
     </task>
-    <task id="LOCAL-00036" summary="#mybatis4_게시물 n개씩 보기_1">
+    <task id="LOCAL-00036" summary="Logging">
       <option name="closed" value="true" />
-      <created>1716339543676</created>
+      <created>1716521863510</created>
       <option name="number" value="00036" />
       <option name="presentableId" value="LOCAL-00036" />
       <option name="project" value="LOCAL" />
-      <updated>1716339543676</updated>
+      <updated>1716521863510</updated>
     </task>
-    <task id="LOCAL-00037" summary="#mybatis4_게시물 n개씩 보기_2(마지막 구간 페이지 설정)">
+    <task id="LOCAL-00037" summary="댓글 API 등록기능">
       <option name="closed" value="true" />
-      <created>1716345071510</created>
+      <created>1716528808799</created>
       <option name="number" value="00037" />
       <option name="presentableId" value="LOCAL-00037" />
       <option name="project" value="LOCAL" />
-      <updated>1716345071510</updated>
+      <updated>1716528808799</updated>
     </task>
-    <task id="LOCAL-00038" summary="#mybatis4_게시물 n개씩 보기_3(prev,next)">
-      <option name="closed" value="true" />
-      <created>1716345614864</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1716345614864</updated>
-    </task>
-    <task id="LOCAL-00039" summary="#mybatis4_게시물 n개씩 보기_4(첫페이지, 끝페이지 이동)">
-      <option name="closed" value="true" />
-      <created>1716354523799</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1716354523799</updated>
-    </task>
-    <task id="LOCAL-00040" summary="#mybatis4_게시물 검색#1">
-      <option name="closed" value="true" />
-      <created>1716355969828</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1716355969828</updated>
-    </task>
-    <task id="LOCAL-00041" summary="#mybatis4_게시물 검색#1(타입별)">
-      <option name="closed" value="true" />
-      <created>1716357019847</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1716357019847</updated>
-    </task>
-    <task id="LOCAL-00042" summary="#mybatis4_게시물 검색#1(검색창)">
-      <option name="closed" value="true" />
-      <created>1716424204507</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1716424204507</updated>
-    </task>
-    <task id="LOCAL-00043" summary="#mybatis4_게시물 검색#1(검색창)_검색타입까지 저장해서 페이지 넘기기">
-      <option name="closed" value="true" />
-      <created>1716424542919</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1716424542919</updated>
-    </task>
-    <task id="LOCAL-00044" summary="#mybatis4_게시물 검색#1(검색창)_검색기록 유지하기_방법1">
-      <option name="closed" value="true" />
-      <created>1716425487155</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1716425487155</updated>
-    </task>
-    <task id="LOCAL-00045" summary="#mybatis4_게시물 검색#1(검색창)_검색기록 유지하기_방법2_referer">
-      <option name="closed" value="true" />
-      <created>1716425961991</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1716425961991</updated>
-    </task>
-    <task id="LOCAL-00046" summary="#mybatis4_게시물 검색#1(검색창)_검색기록 유지하기_세부조정(검색창에 이전기록 남아있기)">
-      <option name="closed" value="true" />
-      <created>1716427904177</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1716427904177</updated>
-    </task>
-    <task id="LOCAL-00047" summary="#게시판_댓글_비동기통신_1">
-      <option name="closed" value="true" />
-      <created>1716434853870</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1716434853870</updated>
-    </task>
-    <task id="LOCAL-00048" summary="#게시판_댓글_비동기통신_2">
-      <option name="closed" value="true" />
-      <created>1716435912513</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1716435912513</updated>
-    </task>
-    <task id="LOCAL-00049" summary="#게시판_댓글_비동기통신_2">
-      <option name="closed" value="true" />
-      <created>1716444922667</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1716444922667</updated>
-    </task>
-    <task id="LOCAL-00050" summary="#클라이언트사이드렌더링#1">
-      <option name="closed" value="true" />
-      <created>1716512350481</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1716512350482</updated>
-    </task>
-    <task id="LOCAL-00051" summary="#클라이언트사이드렌더링#2">
-      <option name="closed" value="true" />
-      <created>1716514155605</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1716514155605</updated>
-    </task>
-    <task id="LOCAL-00052" summary="#클라이언트사이드렌더링_ResponseEntity">
-      <option name="closed" value="true" />
-      <created>1716516639858</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1716516639858</updated>
-    </task>
-    <task id="LOCAL-00053" summary="#게시판_클라이언트사이드렌더링_댓글#1_댓글목록조회요청">
-      <option name="closed" value="true" />
-      <created>1716519507860</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1716519507860</updated>
-    </task>
-    <task id="LOCAL-00054" summary="#게시판_클라이언트사이드렌더링_댓글#1_로그(기록)남기기_logging">
-      <option name="closed" value="true" />
-      <created>1716521879953</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1716521879953</updated>
-    </task>
-    <option name="localTasksCounter" value="55" />
+    <option name="localTasksCounter" value="38" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -662,46 +581,32 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="#3 tier architecture - part1" />
-    <MESSAGE value="#3 tier architecture - part2" />
-    <MESSAGE value="#3 tier architecture - part3" />
-    <MESSAGE value="#mybatis" />
-    <MESSAGE value="#mybatis2_board" />
-    <MESSAGE value="#mybatis3_board_hit/new기능 추가" />
-    <MESSAGE value="#mybatis3_board_hit/new기능 추가_수정" />
-    <MESSAGE value="#mybatis4_게시물 n개씩 보기_1" />
-    <MESSAGE value="#mybatis4_게시물 n개씩 보기_2(마지막 구간 페이지 설정)" />
-    <MESSAGE value="#mybatis4_게시물 n개씩 보기_3(prev,next)" />
-    <MESSAGE value="#mybatis4_게시물 n개씩 보기_4(첫페이지, 끝페이지 이동)" />
-    <MESSAGE value="#mybatis4_게시물 검색#1" />
-    <MESSAGE value="#mybatis4_게시물 검색#1(타입별)" />
-    <MESSAGE value="#mybatis4_게시물 검색#1(검색창)" />
-    <MESSAGE value="#mybatis4_게시물 검색#1(검색창)_검색타입까지 저장해서 페이지 넘기기" />
-    <MESSAGE value="#mybatis4_게시물 검색#1(검색창)_검색기록 유지하기_방법1" />
-    <MESSAGE value="#mybatis4_게시물 검색#1(검색창)_검색기록 유지하기_방법2_referer" />
-    <MESSAGE value="#mybatis4_게시물 검색#1(검색창)_검색기록 유지하기_세부조정(검색창에 이전기록 남아있기)" />
-    <MESSAGE value="#게시판_댓글_비동기통신_1" />
-    <MESSAGE value="#게시판_댓글_비동기통신_2" />
-    <MESSAGE value="#클라이언트사이드렌더링#1" />
-    <MESSAGE value="#클라이언트사이드렌더링#2" />
-    <MESSAGE value="#클라이언트사이드렌더링_ResponseEntity" />
-    <MESSAGE value="#게시판_클라이언트사이드렌더링_댓글#1_댓글목록조회요청" />
-    <MESSAGE value="#게시판_클라이언트사이드렌더링_댓글#1_로그(기록)남기기_logging" />
-    <option name="LAST_COMMIT_MESSAGE" value="#게시판_클라이언트사이드렌더링_댓글#1_로그(기록)남기기_logging" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/study/springstudy/core/chap02/Hotel.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="spring mvc - 게시판 앱 1" />
+    <MESSAGE value="spring mvc - 게시판 앱 2" />
+    <MESSAGE value="spring mvc - 게시판 앱 3" />
+    <MESSAGE value="spring mvc - 게시판 앱 4" />
+    <MESSAGE value="spring mvc - 게시판 앱 5" />
+    <MESSAGE value="3 tier architecture - part1" />
+    <MESSAGE value="3 tier architecture - part2" />
+    <MESSAGE value="3 tier architecture - part3" />
+    <MESSAGE value="마이바티스 part1" />
+    <MESSAGE value="마이바티스 part2" />
+    <MESSAGE value="마이바티스 part3" />
+    <MESSAGE value="페이징 기초" />
+    <MESSAGE value="페이징 렌더링 알고리즘 1" />
+    <MESSAGE value="페이징 렌더링 알고리즘 2 - 마지막 구간 끝페이지 보정" />
+    <MESSAGE value="페이징 렌더링 알고리즘 3 - 이전, 다음 활성화" />
+    <MESSAGE value="페이징 렌더링 알고리즘 4 - 맨처음, 맨끝이동, 페이지 액티브 활성화" />
+    <MESSAGE value="검색 처리 part1 - 제목으로 검색" />
+    <MESSAGE value="검색 처리 part2 - 클라이언트 처리" />
+    <MESSAGE value="검색 처리 part3 - 디테일 처리" />
+    <MESSAGE value="댓글 기능 part1 - 게시물 총 댓글수 표기" />
+    <MESSAGE value="댓글 기능 part2 - 매퍼 테스트" />
+    <MESSAGE value="REST API 기초" />
+    <MESSAGE value="Logging" />
+    <MESSAGE value="댓글 API 등록기능" />
+    <MESSAGE value="#댓글 api등록 기능" />
+    <option name="LAST_COMMIT_MESSAGE" value="#댓글 api등록 기능" />
   </component>
 </project>
