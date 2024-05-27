@@ -19,6 +19,8 @@ import java.util.Map;
 @RequestMapping("/api/v1/replies")
 @RequiredArgsConstructor
 @Slf4j
+@CrossOrigin
+//@CrossOrigin(origins = {"http://localhost:5500", "https://api.every.com"}) // CORS정책 허용범위 설정(허용하는 것만 따로 넣어줄 수도 있음.)
 public class ReplyApiController {
 
     private final ReplyService replyService;
