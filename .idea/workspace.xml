@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="댓글 API 등록기능-입력값 겁증_삭제기능">
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="댓글 API 등록기능-지정한 게시물번호에 댓글쓰기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -581,7 +581,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716779099344</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="댓글 API 등록기능-지정한 게시물번호에 댓글쓰기">
+      <option name="closed" value="true" />
+      <created>1716781166722</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1716781166722</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,7 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="spring mvc - 게시판 앱 3" />
     <MESSAGE value="spring mvc - 게시판 앱 4" />
     <MESSAGE value="spring mvc - 게시판 앱 5" />
     <MESSAGE value="3 tier architecture - part1" />
@@ -625,6 +632,7 @@
     <MESSAGE value="#댓글 api등록 기능" />
     <MESSAGE value="댓글 API 등록기능-입력값 겁증" />
     <MESSAGE value="댓글 API 등록기능-입력값 겁증_삭제기능" />
-    <option name="LAST_COMMIT_MESSAGE" value="댓글 API 등록기능-입력값 겁증_삭제기능" />
+    <MESSAGE value="댓글 API 등록기능-지정한 게시물번호에 댓글쓰기" />
+    <option name="LAST_COMMIT_MESSAGE" value="댓글 API 등록기능-지정한 게시물번호에 댓글쓰기" />
   </component>
 </project>

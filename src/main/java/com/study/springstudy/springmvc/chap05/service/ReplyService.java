@@ -32,7 +32,7 @@ public class ReplyService {
     public boolean register(ReplyPostDto dto) {
         Reply reply = Reply.builder()
                         .replyText(dto.getText())
-                        .replyWriter(dto.getText())
+                        .replyWriter(dto.getAuthor())
                         .boardNo(dto.getBno())
                         .build();
 
