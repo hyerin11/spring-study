@@ -7,6 +7,7 @@ import com.study.springstudy.springmvc.chap05.mapper.ReplyMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collections;
 import java.util.List;
@@ -49,10 +50,11 @@ public class ReplyService {
     }
 
     // 댓글 삭제
+    @Transactional
     public List<ReplyDetailDto> remove(long rno) {
-        boolean flag = replyMapper.delete(rno);
         //댓글 번호로 원본 글 번호 찾기
         long bno = replyMapper.findBno(rno);
+        boolean flag = replyMapper.delete(rno);
         //삭제 후 삭제된 목록을 리턴
         return flag ? getReplies(bno) : Collections.emptyList();
     }
