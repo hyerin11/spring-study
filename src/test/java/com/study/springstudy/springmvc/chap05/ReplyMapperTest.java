@@ -53,6 +53,7 @@ class ReplyMapperTest {
         long boardNo = 1;
         //when
         List<Reply> replies = replyMapper.findAll(boardNo);
+
         //then
         replies.forEach(System.out::println);
     }

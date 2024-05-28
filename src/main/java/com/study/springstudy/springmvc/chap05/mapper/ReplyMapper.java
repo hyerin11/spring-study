@@ -28,4 +28,6 @@ public interface ReplyMapper {
 
     // 댓글번호로 원본글번호 찾기
     long findBno(long rno);
+
+    List<Reply> findAll(long boardNo);
 }
