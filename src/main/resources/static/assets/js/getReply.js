@@ -201,6 +201,8 @@ isFetching = true;
     document.getElementById('replyCnt').textContent = totalReplies;
     //초기 댓글 리셋
     document.getElementById('replyData').innerHTML = ''; //깨끗하게 비우고 시작
+
+    setupInfinitScroll(); //1페이지 돌아왔을 떄 무한스크롤
   }
 
   // 댓글 목록 렌더링
