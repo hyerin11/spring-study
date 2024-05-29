@@ -32,5 +32,6 @@ export const fetchReplyPost = async () => {
   // console.log(replies);
   // renderReplies(replies);
   fetchInfScrollReplies();
+  window.scrollTo(0,0); //입력 후 상단으로 스크롤 올리기
 
 };

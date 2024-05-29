@@ -15,6 +15,7 @@ const fetchDeleteReply = async (rno) => {
     }
   
     fetchInfScrollReplies();
+    window.scrollTo(0,0); //삭제 후 페이지 상단으로 이동(스크롤 위로 올림)
   };
 
 
