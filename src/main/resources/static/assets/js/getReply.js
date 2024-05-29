@@ -1,4 +1,5 @@
 import { BASE_URL } from './reply.js';
+import { showSpinner, hideSpinner } from './spinner.js';
 
 function getRelativeTime(createAt) {
   // 현재 시간 구하기
@@ -182,6 +183,7 @@ export async function fetchInfScrollReplies(pageNo = 1){
 if(isFetching) return;
 isFetching = true;
 
+
   const bno = document.getElementById('wrap').dataset.bno; // 게시물 글번호
 
   const res = await fetch(`${BASE_URL}/${bno}/page/${pageNo}`);
@@ -207,6 +209,7 @@ isFetching = true;
   currentPage = pageNo; //5. 늘어난 페이지로 현재 페이지 올려주기.
 
   isFetching = false;//7. 다 가지고 왔을 때
+  hideSpinner();
 
 
   //24. 댓글을 전부 가져올 시 스크롤 이벤트 제거하기
@@ -215,17 +218,25 @@ isFetching = true;
   }
   
 }
-
-function scrollHandler(e){
-
+//26. await쓰려면 함수가 asnyc가 되어야 함✨
+async function scrollHandler(e){
+ 
   // 1. 스크롤이 최하단부로 내려갔을 때 만 이벤트 발생시켜야 한다
   // 현재 창에 보이는 세로 길이 + 스크롤 내릴 길이가 >= 브라우저 전체 세로길이보다 커졌을 때 = 가장 최하단부이다.
   //                                                                 +500 미리 불러오고(나중에) -500하면 내리기 전 사전에 가져옴
-  if(window.innerHeight + window.scrollY >= document.body.offsetHeight + 100){
+  if(window.innerHeight + window.scrollY >= document.body.offsetHeight + 100
+    && !isFetching
+  ){
     //console.log(e);
     //4. 서버에서 데이터를 비동기로 불러와야 함
-    fetchInfScrollReplies(currentPage + 1); 
-  }
+
+    showSpinner(); 
+
+    //23. 2초의 대기열이 생성되면 다음 대기열 생성까지 1초를 기다려야 함.
+    await new Promise(resolve => setTimeout(resolve, 1000)); //기다렸다고 실행해라
+      fetchInfScrollReplies(currentPage + 1);  // 1초 있다가 나오고, 1초 있다가 나오고~
+  
+  } 
 
   //console.log(e);
 }
