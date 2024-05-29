@@ -1,6 +1,7 @@
 import { fetchInfScrollReplies, setupInfinitScroll } from "./getReply.js";
 import { fetchReplyPost } from "./postReply.js";
 import { removeReplyClickEvent } from "./deleteReply.js";
+import { modifyReplyClickEvent } from "./modifyReply.js";
 
 // ====== 전역 변수 ========
 export const BASE_URL = 'http://localhost:8383/api/v1/replies';
@@ -19,9 +20,14 @@ document.getElementById('replyAddBtn').addEventListener('click', e => {
 });
 
 //댓글 삭제 이벤트 등록
-removeReplyClickEvent();
+removeReplyClickEvent(); //삭제
+modifyReplyClickEvent(); //수정
 
 
 // 댓글 페이지 클릭이벤트 등록
 // replyPageClickEvent();
+
+
+
+
 
