@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="#include">
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="#회원가입 입력값 받기">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/validation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/request/SignUpDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/request/SignUpDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members/sign-up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members/sign-up.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -680,7 +680,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717035386587</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="#회원가입 입력값 받기">
+      <option name="closed" value="true" />
+      <created>1717036794918</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1717036794918</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -699,7 +707,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="마이바티스 part2" />
     <MESSAGE value="마이바티스 part3" />
     <MESSAGE value="페이징 기초" />
     <MESSAGE value="페이징 렌더링 알고리즘 1" />
@@ -724,6 +731,7 @@
     <MESSAGE value="#회원관리시스템 만들기 - 테스트" />
     <MESSAGE value="#회원가입 암호화" />
     <MESSAGE value="#include" />
-    <option name="LAST_COMMIT_MESSAGE" value="#include" />
+    <MESSAGE value="#회원가입 입력값 받기" />
+    <option name="LAST_COMMIT_MESSAGE" value="#회원가입 입력값 받기" />
   </component>
 </project>
