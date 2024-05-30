@@ -1,7 +1,7 @@
 package com.study.springstudy.springmvc.chap05.entity;
 
 /*
-* -- 회원 관리 테이블
+-- 회원 관리 테이블
 CREATE TABLE tbl_member (
     account VARCHAR(50),
     password VARCHAR(150) NOT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE tbl_member (
     reg_date DATETIME DEFAULT current_timestamp,
     CONSTRAINT pk_member PRIMARY KEY (account)
 );
-* */
+ */
 
 import lombok.*;
 
@@ -23,8 +23,12 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Builder
 public class Member {
+
     private String account;
+
+    @Setter
     private String password;
+
     private String name;
     private String email;
     private Auth auth;
