@@ -118,6 +118,17 @@
         alert('로그인이 필요한 서비스입니다.');
     }
 
+
+    // 새로고침하면 alert창 계속 뜸=======
+
+    // 쿼리 파라미터를 제거한 새로운 URL 생성
+        // window.location.origin -> http://localhost:8383
+        // window.location.pathname -> /members/sign-in
+        const newUrl = window.location.origin + window.location.pathname;
+
+        // history.replaceState(state, title, url) : 브라우저 조작
+        history.replaceState(null, null, newUrl);
+
 </script>
 
 </body>

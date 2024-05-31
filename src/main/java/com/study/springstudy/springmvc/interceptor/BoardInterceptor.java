@@ -19,12 +19,13 @@ public class BoardInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
         if (!LoginUtil.isLoggedIn(request.getSession())) {
-            log.info("origin:{}", request.getRequestURI()); //로그인 창 뜨기 전 URL 기록
-            response.sendRedirect("/members/sign-in?message=login-required");
+
+            String redirectUri = request.getRequestURI();
+
+            log.info("origin: {}", redirectUri);
+            response.sendRedirect("/members/sign-in?message=login-required&redirect=" + redirectUri);
             return false;
         }
         return true;
     }
-
-
 }
