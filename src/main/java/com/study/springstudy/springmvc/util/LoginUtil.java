@@ -10,4 +10,5 @@ public class LoginUtil {
     public static boolean isLoggedIn(HttpSession session) {
         return session.getAttribute(LOGIN) != null;
     }
+
 }
