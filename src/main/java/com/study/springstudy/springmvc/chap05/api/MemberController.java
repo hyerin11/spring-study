@@ -50,4 +50,18 @@ public class MemberController {
     }
 
 
+    //======================================
+    // 로그인 양식 열기
+    @GetMapping("/sign-in")
+    public void signIn() {
+        log.info("/members/sign-in GET : forwarding to sign-in.jsp");
+    }
+
+
+
+
+
+
+
+
 }
