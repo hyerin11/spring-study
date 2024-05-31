@@ -2,16 +2,19 @@ package com.study.springstudy.springmvc.chap05.api;
 
 import com.study.springstudy.springmvc.chap05.dto.request.LoginDto;
 import com.study.springstudy.springmvc.chap05.dto.request.SignUpDto;
+import com.study.springstudy.springmvc.chap05.service.LoginResult;
 import com.study.springstudy.springmvc.chap05.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 @RequestMapping("/members")
@@ -60,12 +63,25 @@ public class MemberController {
 
     //로그인 요청 처리✨
     @PostMapping("/sign-in")   //get방식으로 하면 로그인 노출됨
-    public String signIn(LoginDto dto){ //LoginDto.java에서 사용한 이름을 쓴다
+    public String signIn(LoginDto dto, RedirectAttributes ra){ //LoginDto.java에서 사용한 이름을 쓴다
         log.info("/members/sign-in POST");
         log.debug("parameter: {}", dto);
 
         memberService.authenticate(dto);
-        return "redirect:/index";
+
+        LoginResult result = memberService.authenticate(dto);
+
+        //로그인 검증 결과를 jsp에게 보내기
+        //redirect시에는 Redirect된 페이지에 데이터를 보낼 때는 Model객체를 사용할 수 없다
+        //그 이유는 Model객체는 request객체를 사용하는데 해당 객체는 한번의 요청이 끝나면 메모리에서 제거된다.
+        //그러나 redirect는 요청이 2번 발생하므로 request객체를 jsp가 사용하게 된다.
+        //model.addAttribute("result", result);
+        ra.addAttribute("result", result);
+
+        if (result == LoginResult.SUCCESS) {
+            return "redirect:/index"; //로그인 성공시
+        }
+        return "redirect:/members/sign-in"; //로그인 실패시
     }
 
 
