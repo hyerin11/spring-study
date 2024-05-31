@@ -8,7 +8,7 @@
   <style>
 
     body {
-      background: url('/assets/img/마멜이.png') no-repeat center/cover;
+      //background: url('/assets/img/마멜이.png') no-repeat center/cover;
     }
   </style>
 </head>
@@ -23,7 +23,7 @@
   <section class="visual">
       <ul class="slide">
           <li>
-              <img src="img/visual1.jpg" alt="슬라이드 이미지1">
+              <img src="/assets/img/visual1.jpg" alt="슬라이드 이미지1">
               <div class="txt">
                   <p>Creative design with Hong Studio</p>
                   <h3>Website & APP, <br>Responsive Web and <br>Brand Identity </h3>
@@ -32,7 +32,7 @@
               <span class="scroll">Scroll down</span>
           </li>
           <!-- <li>
-              <img src="img/visual2.jpg" alt="슬라이드 이미지1">
+              <img src="/assets/img/visual2.jpg" alt="슬라이드 이미지1">
               <div class="txt">
                   <p>Creative design with Hong Studio</p>
                   <h3>Website & APP, <br>Responsive Web and <br>Brand Identity </h3>
@@ -41,7 +41,7 @@
               <span class="scroll">Scroll down</span>
           </li>
           <li>
-              <img src="img/visual3.jpg" alt="슬라이드 이미지1">
+              <img src="/assets/img/visual3.jpg" alt="슬라이드 이미지1">
               <div class="txt">
                   <p>Creative design with Hong Studio</p>
                   <h3>Website & APP, <br>Responsive Web and <br>Brand Identity </h3>
@@ -50,7 +50,7 @@
               <span class="scroll">Scroll down</span>
           </li>
           <li>
-              <img src="img/visual4.jpg" alt="슬라이드 이미지1">
+              <img src="/assets/img/visual4.jpg" alt="슬라이드 이미지1">
               <div class="txt">
                   <p>Creative design with Hong Studio</p>
                   <h3>Website & APP, <br>Responsive Web and <br>Brand Identity </h3>
@@ -59,7 +59,7 @@
               <span class="scroll">Scroll down</span>
           </li>
           <li>
-              <img src="img/visual5.jpg" alt="슬라이드 이미지1">
+              <img src="/assets/img/visual5.jpg" alt="슬라이드 이미지1">
               <div class="txt">
                   <p>Creative design with Hong Studio</p>
                   <h3>Website & APP, <br>Responsive Web and <br>Brand Identity </h3>
@@ -68,7 +68,7 @@
               <span class="scroll">Scroll down</span>
           </li>
           <li>
-              <img src="img/visual6.jpg" alt="슬라이드 이미지1">
+              <img src="/assets/img/visual6.jpg" alt="슬라이드 이미지1">
               <div class="txt">
                   <p>Creative design with Hong Studio</p>
                   <h3>Website & APP, <br>Responsive Web and <br>Brand Identity </h3>
@@ -105,7 +105,7 @@
           <ul class="animate" data-animate="fadeInUp" data-duration="1s">
               <li>
                   <a href="#">
-                      <img src="img/project1.jpg" alt="project1">
+                      <img src="/assets/img/project1.jpg" alt="project1">
                       <div class="name">
                           <span>Website</span>
                           <h3>Linkin Aviation</h3>
@@ -114,7 +114,7 @@
               </li>
               <li>
                   <a href="#">
-                      <img src="img/project2.jpg" alt="project2">
+                      <img src="/assets/img/project2.jpg" alt="project2">
                       <div class="name">
                           <span>Website</span>
                           <h3>HEESUNG LMS</h3>
@@ -123,7 +123,7 @@
               </li>
               <li>
                   <a href="#">
-                      <img src="img/project3.png" alt="project3">
+                      <img src="/assets/img/project3.png" alt="project3">
                       <div class="name">
                           <span>Website</span>
                           <h3>ORPHAN</h3>
@@ -132,7 +132,7 @@
               </li>
               <li>
                   <a href="#">
-                      <img src="img/project4.jpg" alt="project4">
+                      <img src="/assets/img/project4.jpg" alt="project4">
                       <div class="name">
                           <span>Website</span>
                           <h3>APMA WEB/APP</h3>
