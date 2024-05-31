@@ -1,5 +1,6 @@
 package com.study.springstudy.springmvc.chap05.api;
 
+import com.study.springstudy.springmvc.chap05.dto.request.LoginDto;
 import com.study.springstudy.springmvc.chap05.dto.request.SignUpDto;
 import com.study.springstudy.springmvc.chap05.service.MemberService;
 import lombok.RequiredArgsConstructor;
@@ -35,7 +36,7 @@ public class MemberController {
 
         boolean flag = memberService.join(dto);
 
-        return flag ? "redirect:/board/list" : "redirect:/members/sign-up";
+        return flag ? "redirect:/members.sign-in" : "redirect:/members/sign-up";
     }
 
     // 아이디, 이메일 중복검사 비동기 요청 처리
@@ -57,8 +58,15 @@ public class MemberController {
         log.info("/members/sign-in GET : forwarding to sign-in.jsp");
     }
 
+    //로그인 요청 처리✨
+    @PostMapping("/sign-in")   //get방식으로 하면 로그인 노출됨
+    public String signIn(LoginDto dto){ //LoginDto.java에서 사용한 이름을 쓴다
+        log.info("/members/sign-in POST");
+        log.debug("parameter: {}", dto);
 
-
+        memberService.authenticate(dto);
+        return "redirect:/index";
+    }
 
 
 
