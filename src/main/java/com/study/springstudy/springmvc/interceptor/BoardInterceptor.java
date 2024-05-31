@@ -26,6 +26,7 @@ public class BoardInterceptor implements HandlerInterceptor {
             response.sendRedirect("/members/sign-in?message=login-required&redirect=" + redirectUri);
             return false;
         }
+
         return true;
     }
 }

@@ -20,6 +20,8 @@ public class LoginUserInfoDto {
         this.account = member.getAccount();
         this.email = member.getEmail();
         this.nickName = member.getName();
-        this.auth = member.getAuth().toString();
+        this.auth = member.getAuth().name(); //.name은 대문자만 넣음 COMMON, ADMIN
+        //System.out.println(this);
     }
 }
+
