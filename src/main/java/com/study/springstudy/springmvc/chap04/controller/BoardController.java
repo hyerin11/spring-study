@@ -6,18 +6,18 @@ import com.study.springstudy.springmvc.chap04.common.Search;
 import com.study.springstudy.springmvc.chap04.dto.BoardDetailResponseDto;
 import com.study.springstudy.springmvc.chap04.dto.BoardListResponseDto;
 import com.study.springstudy.springmvc.chap04.dto.BoardWriteRequestDto;
-import com.study.springstudy.springmvc.chap04.entity.Board;
-import com.study.springstudy.springmvc.chap04.repository.BoardRepository;
 import com.study.springstudy.springmvc.chap04.service.BoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
+import javax.servlet.http.HttpSession;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Controller
 @RequestMapping("/board")
@@ -29,7 +29,7 @@ public class BoardController {
 
     // 1. 목록 조회 요청 (/board/list : GET)
     @GetMapping("/list")
-    public String list( @ModelAttribute("s") Search page, Model model) {
+    public String list(@ModelAttribute("s") Search page, Model model) {
         System.out.println("/board/list GET");
 
         // 서비스에게 조회 요청 위임
@@ -40,8 +40,7 @@ public class BoardController {
         // 3. JSP파일에 해당 목록데이터를 보냄
         model.addAttribute("bList", bList);
         model.addAttribute("maker", maker);
-        //model.addAttribute("s", page);
-        //@ModelAttribute("s") Search page와 같은 것!이라 생략
+//        model.addAttribute("s", page);
 
         return "board/list";
     }
@@ -56,13 +55,13 @@ public class BoardController {
     // 3. 게시글 등록 요청 (/board/write : POST)
     // -> 목록조회 요청 리다이렉션
     @PostMapping("/write")
-    public String write(BoardWriteRequestDto dto) {
+    public String write(BoardWriteRequestDto dto, HttpSession session) {
         System.out.println("/board/write POST! ");
 
         // 1. 브라우저가 전달한 게시글 내용 읽기
         System.out.println("dto = " + dto);
 
-        service.insert(dto);
+        service.insert(dto, session);
 
         return "redirect:/board/list";
     }
@@ -80,7 +79,9 @@ public class BoardController {
 
     // 5. 게시글 상세 조회 요청 (/board/detail : GET)
     @GetMapping("/detail")
-    public String detail(int bno, Model model, HttpServletRequest request) {
+    public String detail(int bno,
+                         Model model,
+                         HttpServletRequest request) {
         System.out.println("/board/detail GET");
 
         // 1. 상세조회하고 싶은 글번호를 읽기
