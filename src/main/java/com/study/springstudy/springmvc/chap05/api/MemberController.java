@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 @Controller
 @RequestMapping("/members")
 @Slf4j
@@ -39,7 +42,7 @@ public class MemberController {
 
         boolean flag = memberService.join(dto);
 
-        return flag ? "redirect:/members.sign-in" : "redirect:/members/sign-up";
+        return flag ? "redirect:/members/sign-in" : "redirect:/members/sign-up";
     }
 
     // 아이디, 이메일 중복검사 비동기 요청 처리
@@ -53,39 +56,55 @@ public class MemberController {
                 .body(flag);
     }
 
-
-    //======================================
     // 로그인 양식 열기
     @GetMapping("/sign-in")
     public void signIn() {
         log.info("/members/sign-in GET : forwarding to sign-in.jsp");
     }
 
-    //로그인 요청 처리✨
-    @PostMapping("/sign-in")   //get방식으로 하면 로그인 노출됨
-    public String signIn(LoginDto dto, RedirectAttributes ra){ //LoginDto.java에서 사용한 이름을 쓴다
+    // 로그인 요청 처리
+    @PostMapping("/sign-in")
+    public String signIn(LoginDto dto,
+                         RedirectAttributes ra,
+                         HttpServletRequest request) {
         log.info("/members/sign-in POST");
         log.debug("parameter: {}", dto);
 
-        memberService.authenticate(dto);
+        // 세션 얻기
+        HttpSession session = request.getSession();
 
-        LoginResult result = memberService.authenticate(dto);
+        LoginResult result = memberService.authenticate(dto, session);
 
-        //로그인 검증 결과를 jsp에게 보내기
-        //redirect시에는 Redirect된 페이지에 데이터를 보낼 때는 Model객체를 사용할 수 없다
-        //그 이유는 Model객체는 request객체를 사용하는데 해당 객체는 한번의 요청이 끝나면 메모리에서 제거된다.
-        //그러나 redirect는 요청이 2번 발생하므로 request객체를 jsp가 사용하게 된다.
-        //model.addAttribute("result", result);
-        ra.addAttribute("result", result);
+        // 로그인 검증 결과를 JSP에게 보내기
+        // Redirect시에 Redirect된 페이지에 데이터를 보낼 때는
+        // Model객체를 사용할 수 없음
+        // 왜냐면 Model객체는 request객체를 사용하는데 해당 객체는
+        // 한번의 요청이 끝나면 메모리에서 제거된다. 그러나 redirect는
+        // 요청이 2번 발생하므로 다른 request객체를 jsp가 사용하게 됨
+
+//        model.addAttribute("result", result); // (X)
+        ra.addFlashAttribute("result", result);
 
         if (result == LoginResult.SUCCESS) {
-            return "redirect:/index"; //로그인 성공시
+            return "redirect:/index"; // 로그인 성공시
         }
-        return "redirect:/members/sign-in"; //로그인 실패시
+
+        return "redirect:/members/sign-in";
     }
 
+    @GetMapping("/sign-out")
+    public String signOut(HttpSession session){
+        //세션 구하기
+        //HttpSession session = request.getSession();
+        //HttpSession session 써주면 자동으로 구해준다.
 
+        //세션에서 로그인 기록 삭제
+        session.removeAttribute("login");
 
+        //세션을 초기화 (reset)
+        session.invalidate();
 
-
+        //홈으로 보내기
+        return "redirect:/";
+    }
 }

@@ -44,7 +44,7 @@ class MemberServiceTest {
                 .password("kjlksd")
                 .build();
         //when
-        LoginResult result = memberService.authenticate(dto);
+        LoginResult result = memberService.authenticate(dto, ra);
         //then
         assertEquals(LoginResult.NO_ACC, result);
     }
@@ -58,7 +58,7 @@ class MemberServiceTest {
                 .password("kjlksd")
                 .build();
         //when
-        LoginResult result = memberService.authenticate(dto);
+        LoginResult result = memberService.authenticate(dto, ra);
         //then
         assertEquals(LoginResult.NO_PW, result);
     }
@@ -72,7 +72,7 @@ class MemberServiceTest {
                 .password("kkk123!")
                 .build();
         //when
-        LoginResult result = memberService.authenticate(dto);
+        LoginResult result = memberService.authenticate(dto, ra);
         //then
         assertEquals(LoginResult.SUCCESS, result);
     }
