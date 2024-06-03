@@ -5,20 +5,24 @@ import com.study.springstudy.springmvc.chap05.dto.request.SignUpDto;
 import com.study.springstudy.springmvc.chap05.dto.response.LoginUserInfoDto;
 import com.study.springstudy.springmvc.chap05.entity.Member;
 import com.study.springstudy.springmvc.chap05.mapper.MemberMapper;
+import com.study.springstudy.springmvc.util.LoginUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import static com.study.springstudy.springmvc.chap05.service.LoginResult.*;
-import static com.study.springstudy.springmvc.util.LoginUtil.LOGIN;
+import static com.study.springstudy.springmvc.util.LoginUtil.*;
 
 @Service
 @RequiredArgsConstructor
 @Slf4j
+
 public class MemberService {
 
     private final MemberMapper memberMapper;
@@ -38,7 +42,7 @@ public class MemberService {
 
 
     // 로그인 검증 처리
-    public LoginResult authenticate(LoginDto dto, HttpSession session) {
+    public LoginResult authenticate(LoginDto dto, HttpSession session, HttpServletResponse response) {
 
         // 회원가입 여부 확인
         String account = dto.getAccount();
@@ -57,6 +61,23 @@ public class MemberService {
         if (!encoder.matches(inputPassword, originPassword)) {
             log.info("비밀번호가 일치하지 않습니다.");
             return NO_PW;
+        }
+
+        // 자동 로그인 추가 처리
+        if(dto.isAutoLogin()){
+            // 1. 자동 로그인 쿠키 생성
+            // - 쿠키 내부에 절대로 중복되지 않는 유니크한 값을 저장
+            // (UUID, SessionID)
+            Cookie autoLoginCookie = new Cookie(AUTO_LOGIN_COOKIE, session.getId());
+
+            // 쿠키 설정
+            autoLoginCookie.setPath("/"); //모든 경로에서 쿠키를 사용하겠다(경로)
+            autoLoginCookie.setMaxAge(60*60*24*90); //자동로그인 유지 시간(저장기간)
+
+            // 2. 쿠키를 클라이언트에게 전송 - 응답 바디에 실어보내야 함
+            response.addCookie(autoLoginCookie);
+
+            // 3. db에도 해당 쿠키값을 저장
         }
 
         log.info("{}님 로그인 성공", foundMember.getName());
