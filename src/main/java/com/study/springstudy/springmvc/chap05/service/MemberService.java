@@ -1,5 +1,6 @@
 package com.study.springstudy.springmvc.chap05.service;
 
+import com.study.springstudy.springmvc.chap05.dto.request.AutoLoginDto;
 import com.study.springstudy.springmvc.chap05.dto.request.LoginDto;
 import com.study.springstudy.springmvc.chap05.dto.request.SignUpDto;
 import com.study.springstudy.springmvc.chap05.dto.response.LoginUserInfoDto;
@@ -8,6 +9,7 @@ import com.study.springstudy.springmvc.chap05.mapper.MemberMapper;
 import com.study.springstudy.springmvc.util.LoginUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.checkerframework.checker.units.qual.A;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -15,6 +17,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+import java.time.LocalDateTime;
 
 import static com.study.springstudy.springmvc.chap05.service.LoginResult.*;
 import static com.study.springstudy.springmvc.util.LoginUtil.*;
@@ -68,7 +72,8 @@ public class MemberService {
             // 1. 자동 로그인 쿠키 생성
             // - 쿠키 내부에 절대로 중복되지 않는 유니크한 값을 저장
             // (UUID, SessionID)
-            Cookie autoLoginCookie = new Cookie(AUTO_LOGIN_COOKIE, session.getId());
+            String sessionId = session.getId();
+            Cookie autoLoginCookie = new Cookie(AUTO_LOGIN_COOKIE, sessionId);
 
             // 쿠키 설정
             autoLoginCookie.setPath("/"); //모든 경로에서 쿠키를 사용하겠다(경로)
@@ -78,6 +83,13 @@ public class MemberService {
             response.addCookie(autoLoginCookie);
 
             // 3. db에도 해당 쿠키값을 저장
+            memberMapper.updateAutoLogin(
+                    AutoLoginDto.builder()
+                            .sessionId(sessionId)
+                            .limitTime(LocalDateTime.now().plusDays(90))
+                            .account(account)
+                            .build()
+            );
         }
 
         log.info("{}님 로그인 성공", foundMember.getName());
