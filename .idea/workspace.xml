@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="#게시판 인터셉터_자신이 작성한 게시물만 삭제할 수 있다.(관리자는 모두 삭제 가능)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/config/ErrorPageConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/error/ErrorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/error404.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/error500.jsp" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="#게시판 인터셉터_삭제요청이 들어오면 서버에서 한번 더 관리자인지 or 자신이 쓴 글 인지 체크한다 / 서버 오류 페이지 만들기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/config/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/interceptor/BoardInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/interceptor/BoardInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/LoginUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/LoginUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,14 +292,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00012" summary="spring mvc - 스프링 JDBC">
-      <option name="closed" value="true" />
-      <created>1715917620358</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1715917620358</updated>
     </task>
     <task id="LOCAL-00013" summary="spring mvc - 스프링 JDBC 2">
       <option name="closed" value="true" />
@@ -692,7 +677,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717141076459</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="#게시판 인터셉터_삭제요청이 들어오면 서버에서 한번 더 관리자인지 or 자신이 쓴 글 인지 체크한다 / 서버 오류 페이지 만들기">
+      <option name="closed" value="true" />
+      <created>1717375811868</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1717375811868</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -711,7 +704,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="REST API 기초" />
     <MESSAGE value="Logging" />
     <MESSAGE value="댓글 API 등록기능" />
     <MESSAGE value="#댓글 api등록 기능" />
@@ -736,6 +728,7 @@
     <MESSAGE value="#게시판 인터셉터_로그인 한 후 게시판으로 이동" />
     <MESSAGE value="#게시판 인터셉터_작성자 자동 지정" />
     <MESSAGE value="#게시판 인터셉터_자신이 작성한 게시물만 삭제할 수 있다.(관리자는 모두 삭제 가능)" />
-    <option name="LAST_COMMIT_MESSAGE" value="#게시판 인터셉터_자신이 작성한 게시물만 삭제할 수 있다.(관리자는 모두 삭제 가능)" />
+    <MESSAGE value="#게시판 인터셉터_삭제요청이 들어오면 서버에서 한번 더 관리자인지 or 자신이 쓴 글 인지 체크한다 / 서버 오류 페이지 만들기" />
+    <option name="LAST_COMMIT_MESSAGE" value="#게시판 인터셉터_삭제요청이 들어오면 서버에서 한번 더 관리자인지 or 자신이 쓴 글 인지 체크한다 / 서버 오류 페이지 만들기" />
   </component>
 </project>
