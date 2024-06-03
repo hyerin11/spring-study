@@ -70,7 +70,6 @@ public class BoardInterceptor implements HandlerInterceptor {
             }
         }
 
-
         return true;
     }
 }

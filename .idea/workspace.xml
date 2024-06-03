@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="#게시판 인터셉터_쿠키저장_3_자동화(인터셉터)자동로그인">
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="#게시판 인터셉터_쿠키저장_4_로그아웃(쿠키 지우기)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/MemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/interceptor/BoardInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/interceptor/BoardInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/LoginUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/LoginUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -295,14 +297,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00016" summary="spring mvc - 게시판 앱 3">
-      <option name="closed" value="true" />
-      <created>1716169394194</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1716169394194</updated>
     </task>
     <task id="LOCAL-00017" summary="spring mvc - 게시판 앱 4">
       <option name="closed" value="true" />
@@ -688,7 +682,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717381991446</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="#게시판 인터셉터_쿠키저장_4_로그아웃(쿠키 지우기)">
+      <option name="closed" value="true" />
+      <created>1717383197273</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1717383197273</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,7 +709,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="댓글 API 등록기능-입력값 겁증_삭제기능" />
     <MESSAGE value="댓글 API 등록기능-지정한 게시물번호에 댓글쓰기" />
     <MESSAGE value="댓글_페이징_1" />
     <MESSAGE value="#댓글 삭제_입력한 후 스크롤 위로 올림" />
@@ -732,6 +733,7 @@
     <MESSAGE value="#게시판 인터셉터_쿠키저장_2_db저장" />
     <MESSAGE value="#게시판 인터셉터_쿠키저장_3_자동화(인터셉터)" />
     <MESSAGE value="#게시판 인터셉터_쿠키저장_3_자동화(인터셉터)자동로그인" />
-    <option name="LAST_COMMIT_MESSAGE" value="#게시판 인터셉터_쿠키저장_3_자동화(인터셉터)자동로그인" />
+    <MESSAGE value="#게시판 인터셉터_쿠키저장_4_로그아웃(쿠키 지우기)" />
+    <option name="LAST_COMMIT_MESSAGE" value="#게시판 인터셉터_쿠키저장_4_로그아웃(쿠키 지우기)" />
   </component>
 </project>

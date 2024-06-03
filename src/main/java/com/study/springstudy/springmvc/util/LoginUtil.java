@@ -50,4 +50,6 @@ public class LoginUtil {
         Cookie autoLoginCookie = WebUtils.getCookie(request, AUTO_LOGIN_COOKIE);
         return autoLoginCookie != null;
     }
+
+
 }
