@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="#게시판 인터셉터_쿠키저장_4_로그아웃(쿠키 지우기)">
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="#게시판 인터셉터_쿠키저장_5_쿠키를 이용한 카운트 중복 제어하기">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/entity/ViewLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/mapper/ViewLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ViewLogMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/interceptor/BoardInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/interceptor/BoardInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/LoginUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/LoginUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/config/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +47,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="jsp template" />
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -297,14 +298,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00017" summary="spring mvc - 게시판 앱 4">
-      <option name="closed" value="true" />
-      <created>1716172990822</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1716172990822</updated>
     </task>
     <task id="LOCAL-00018" summary="spring mvc - 게시판 앱 5">
       <option name="closed" value="true" />
@@ -690,7 +683,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717383197273</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="#게시판 인터셉터_쿠키저장_5_쿠키를 이용한 카운트 중복 제어하기">
+      <option name="closed" value="true" />
+      <created>1717392225228</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1717392225228</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -709,7 +710,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="댓글 API 등록기능-지정한 게시물번호에 댓글쓰기" />
     <MESSAGE value="댓글_페이징_1" />
     <MESSAGE value="#댓글 삭제_입력한 후 스크롤 위로 올림" />
     <MESSAGE value="#회원관리시스템 만들기 - Entity, Mapper생성" />
@@ -734,6 +734,7 @@
     <MESSAGE value="#게시판 인터셉터_쿠키저장_3_자동화(인터셉터)" />
     <MESSAGE value="#게시판 인터셉터_쿠키저장_3_자동화(인터셉터)자동로그인" />
     <MESSAGE value="#게시판 인터셉터_쿠키저장_4_로그아웃(쿠키 지우기)" />
-    <option name="LAST_COMMIT_MESSAGE" value="#게시판 인터셉터_쿠키저장_4_로그아웃(쿠키 지우기)" />
+    <MESSAGE value="#게시판 인터셉터_쿠키저장_5_쿠키를 이용한 카운트 중복 제어하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="#게시판 인터셉터_쿠키저장_5_쿠키를 이용한 카운트 중복 제어하기" />
   </component>
 </project>
