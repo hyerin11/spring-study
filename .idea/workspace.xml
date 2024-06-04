@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="#게시판 인터셉터_좋아요싫어요 기능_1_기본 구조_틀">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReactionService.java" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="#게시판 인터셉터_좋아요싫어요 기능_2_중간처리">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/response/ReactionDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/Reaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/entity/Reaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ReactionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ReactionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,14 +298,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00020" summary="3 tier architecture - part2">
-      <option name="closed" value="true" />
-      <created>1716182242825</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1716182242825</updated>
     </task>
     <task id="LOCAL-00021" summary="3 tier architecture - part3">
       <option name="closed" value="true" />
@@ -686,7 +683,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717461317846</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="#게시판 인터셉터_좋아요싫어요 기능_2_중간처리">
+      <option name="closed" value="true" />
+      <created>1717462881251</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1717462881252</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -705,7 +710,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="#회원관리시스템 만들기 - Entity, Mapper생성" />
     <MESSAGE value="#회원관리시스템 만들기 - 테스트" />
     <MESSAGE value="#회원가입 암호화" />
     <MESSAGE value="#include" />
@@ -730,6 +734,7 @@
     <MESSAGE value="#게시판 인터셉터_쿠키저장_5_쿠키를 이용한 카운트 중복 제어하기" />
     <MESSAGE value="#게시판 인터셉터_쿠키저장_6_M:N관계" />
     <MESSAGE value="#게시판 인터셉터_좋아요싫어요 기능_1_기본 구조_틀" />
-    <option name="LAST_COMMIT_MESSAGE" value="#게시판 인터셉터_좋아요싫어요 기능_1_기본 구조_틀" />
+    <MESSAGE value="#게시판 인터셉터_좋아요싫어요 기능_2_중간처리" />
+    <option name="LAST_COMMIT_MESSAGE" value="#게시판 인터셉터_좋아요싫어요 기능_2_중간처리" />
   </component>
 </project>

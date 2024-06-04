@@ -24,7 +24,7 @@
                 <div id="content">
                     ${bbb.content}
                 </div>
-
+                
                 <div class="buttons">
                     <div class="reaction-buttons">
                       <button id="like-btn">
@@ -39,7 +39,7 @@
                         <span id="dislike-count">0</span>
                       </button>
                     </div>
-
+            
                     <button
                       class="list-btn"
                       type="button"
@@ -148,6 +148,54 @@
 
 
             <script type="module" src="/assets/js/reply.js"></script>
+
+            <script>
+
+                // 서버에 좋아요, 싫어요 요청을 보내는 함수
+                async function sendReaction(reactionType) {
+                    console.log(reactionType);
+                    const bno = document.getElementById('wrap').dataset.bno;
+
+                    const res = await fetch(`/board/\${reactionType}?bno=\${bno}`);
+                    const { likeCount, dislikeCount, userReaction } = await res.json();
+
+                    document.getElementById('like-count').textContent = likeCount;
+                    document.getElementById('dislike-count').textContent = dislikeCount;
+
+                    // console.log(json);
+                    // 버튼 활성화 스타일 처리
+                    updateReactionButtons(userReaction);
+                }
+
+                // 좋아요, 싫어요 버튼 배경색 변경
+                function updateReactionButtons(userReaction) {
+                    const $likeBtn = document.getElementById('like-btn');
+                    const $dislikeBtn = document.getElementById('dislike-btn');
+
+                    const ACTIVE = 'active';
+                    // 좋아요 버튼이 눌렸을 경우
+                    if (userReaction === 'LIKE') {
+                        $likeBtn.classList.add(ACTIVE);
+                        $dislikeBtn.classList.remove(ACTIVE);
+                    } else if (userReaction === 'DISLIKE') { // 싫어요 버튼이 눌렸을 경우
+                        $dislikeBtn.classList.add(ACTIVE);
+                        $likeBtn.classList.remove(ACTIVE);
+                    } else { // 둘다 안눌렀을 경우
+                        $dislikeBtn.classList.remove(ACTIVE);
+                        $likeBtn.classList.remove(ACTIVE);
+                    }
+                }
+
+                // 좋아요 클릭 이벤트
+                document.getElementById('like-btn').addEventListener('click', e => {
+                    sendReaction('like');
+                });
+
+                // 싫어요 클릭 이벤트
+                document.getElementById('dislike-btn').addEventListener('click', e => {
+                    sendReaction('dislike');
+                });
+            </script>
 
         </body>
 

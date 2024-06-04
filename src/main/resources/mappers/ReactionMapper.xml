@@ -9,7 +9,7 @@
 <!--    void save(Reaction reaction);-->
     <insert id="save">
         INSERT INTO tbl_reaction
-            (board_no, account, reaction_type_
+            (board_no, account, reaction_type)
         VALUES
             (#{boardNo}, #{account}, #{reactionType})
     </insert>
