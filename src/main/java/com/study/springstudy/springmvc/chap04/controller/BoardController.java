@@ -10,6 +10,7 @@ import com.study.springstudy.springmvc.chap05.dto.response.ReactionDto;
 import com.study.springstudy.springmvc.chap05.service.ReactionService;
 import com.study.springstudy.springmvc.util.LoginUtil;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -110,6 +111,13 @@ public class BoardController {
     @GetMapping("/like")
     @ResponseBody
     public ResponseEntity<?> like(long bno, HttpSession session){
+
+        //로그인 검증
+        if(!LoginUtil.isLoggedIn(session)){
+            return ResponseEntity.status(403)
+                    .body("로그인이 필요합니다");
+        }
+
         log.info("like asyn request!");
 
         String account = LoginUtil.getLoggedInUserAccount(session);
@@ -123,6 +131,13 @@ public class BoardController {
     @GetMapping("/dislike")
     @ResponseBody
     public ResponseEntity<?> dislike(long bno, HttpSession session) {
+
+        //로그인 검증
+        if(!LoginUtil.isLoggedIn(session)){
+            return ResponseEntity.status(403)
+                    .body("로그인이 필요합니다");
+        }
+
         log.info("dislike asyn request!");
 
         String account = LoginUtil.getLoggedInUserAccount(session);
