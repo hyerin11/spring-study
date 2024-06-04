@@ -74,11 +74,11 @@ public class ReactionService {
 //                reactionMapper.delete(boardNo, account);
 //            }else{ //싫어요가 눌린 상태에서 좋아요 누르면 = 취소
 //                reactionMapper.delete(boardNo, account);  //기존 리액션 취소
-//                reactionMapper.save(newReaction);    //새 리액션 LIKE 생성👍
+//                reactionMapper.save(newReaction);    //새 리액션 LIKE 생성
 //            }
 //
 //        }else{ //처음 리액션을 한 경우
-//            reactionMapper.save(newReaction); // 새 리액션 LIKE 생성👍
+//            reactionMapper.save(newReaction); // 새 리액션 LIKE 생성
 //        }
 //    }
 

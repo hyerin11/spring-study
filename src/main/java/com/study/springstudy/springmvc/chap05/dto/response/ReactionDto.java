@@ -13,4 +13,5 @@ public class ReactionDto {
     private int likeCount; //갱신된 총 좋아요 수
     private int dislikeCount; //갱신된 총 싫어요 수
     private String userReaction; //현재 리액션 상태(안눌렀는지, 좋아요인지, 싫어요인지)
+
 }
