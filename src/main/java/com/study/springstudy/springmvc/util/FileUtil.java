@@ -5,6 +5,9 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DecimalFormat;
+import java.time.LocalDateTime;
+import java.util.List;
 import java.util.UUID;
 
 public class FileUtil {
@@ -25,12 +28,17 @@ public class FileUtil {
     //1.메서드 생성
     public static String uploadFile(String rootPath, MultipartFile file){
 
-        // 1) 원본파일명을 중복 없는 랜덤 파일명으로 변경한다
+        // 원본파일명을 중복 없는 랜덤 파일명으로 변경한다
         String newFileName = UUID.randomUUID() + "_" + file.getOriginalFilename();
+
+        // 이 첨부파일을 날짜별로 관리하기 위해 날짜 폴더 생성
+        String newUploadPath = makeDateFormatDirectory(rootPath);
+
+
 
         // 파일 업로드 수행
         try {
-            file.transferTo(new File(rootPath, newFileName));
+            file.transferTo(new File(newUploadPath, newFileName));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -38,6 +46,34 @@ public class FileUtil {
 
         return "";
 
+    }
+
+    private static String makeDateFormatDirectory(String rootPath) {
+
+        //오늘 날짜 정보를 추출
+        LocalDateTime now = LocalDateTime.now();
+        int year = now.getYear();
+        int month = now.getMonthValue();
+        int day = now.getDayOfMonth();
+
+        List<String> dateList = List.of(year + "", len2(month), len2(day));
+
+        // rootPath - E:/spring_prj/upload
+        String newDirectoryPath = rootPath;
+
+        // newDirectoryPath - E:/spring_prj/upload/2024/06/05
+        for (String s : dateList) {
+            newDirectoryPath += "/" + s;
+            File f = new File(newDirectoryPath);
+            if (!f.exists()) f.mkdir();
+        }
+
+        return newDirectoryPath;
+
+}
+    //어떤 숫자를 받으면 2자리고 만들어줌 -> 3 >> 03
+    private static String len2(int n){
+        return new DecimalFormat("00").format(n);
     }
 
 }
