@@ -15,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
@@ -29,7 +30,6 @@ public class MemberController {
 
     @Value("${file.upload.root-path}")
     private String rootPath;
-    //private String rootPath = "E:\\spring-prj\\upload";
 
     private final MemberService memberService;
 
@@ -46,13 +46,18 @@ public class MemberController {
     public String signUp(@Validated SignUpDto dto) {
 
 
-
         log.info("/members/sign-up POST ");
         log.debug("parameter: {}", dto);
-        log.debug("attached profile image name: {}", dto.getProfileImage().getOriginalFilename());
 
-        //서버에 업로드 후 업로드 경로 변환
-        String profilePath = FileUtil.uploadFile(rootPath, dto.getProfileImage());
+        // 프로필 사진 추출
+        MultipartFile profileImage = dto.getProfileImage();
+
+        String profilePath = null;
+        if (!profileImage.isEmpty()) {
+            log.debug("attached profile image name: {}", profileImage.getOriginalFilename());
+            // 서버에 업로드 후 업로드 경로 반환
+            profilePath = FileUtil.uploadFile(rootPath, profileImage);
+        }
 
         boolean flag = memberService.join(dto, profilePath);
 
@@ -130,11 +135,10 @@ public class MemberController {
         // 세션 구하기
         HttpSession session = request.getSession();
 
-        //자동 로그인 상태인지 확인
-        if(LoginUtil.isAutoLogin(request)){
-            //쿠키를 제거하고, DB에도 자동로그인 관련 데이터를 원래대로 돌려놓는다
+        // 자동로그인 상태인지 확인
+        if (LoginUtil.isAutoLogin(request)) {
+            // 쿠키를 제거하고, DB에도 자동로그인 관련데이터를 원래대로 해놓음
             memberService.autoLoginClear(request, response);
-
         }
 
         // 세션에서 로그인 기록 삭제
@@ -146,8 +150,5 @@ public class MemberController {
         // 홈으로 보내기
         return "redirect:/";
     }
-
-
-
 
 }
