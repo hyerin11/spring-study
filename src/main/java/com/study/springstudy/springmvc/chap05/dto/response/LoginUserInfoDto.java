@@ -15,6 +15,7 @@ public class LoginUserInfoDto {
     private String nickName;
     private String email;
     private String auth;
+    private String profile;
 
     public LoginUserInfoDto(Member member){
         this.account = member.getAccount();
@@ -22,6 +23,7 @@ public class LoginUserInfoDto {
         this.nickName = member.getName();
         this.auth = member.getAuth().name(); //.name은 대문자만 넣음 COMMON, ADMIN
         //System.out.println(this);
+        this.profile = member.getProfileImg();
     }
 }
 
