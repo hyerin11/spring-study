@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.SimpleTimeZone;
 import java.util.UUID;
 
 public class FileUtil {
@@ -43,8 +44,16 @@ public class FileUtil {
             e.printStackTrace();
         }
 
+        //파일 전체 경로 확인을 위해서는
+        //ex) D:/spring_pri/upload/2024/06/05/adshjkadog.jpg
+        String fullPaath = newUploadPath + "/" + newFileName;
 
-        return "";
+        //최종 url-path:/local을 앞에 붙여서 /2024/06/05/adshjkadog.jpg
+        String urlPath = "/local" + fullPaath.substring(rootPath.length());
+
+        // 업로드가 완료되면 데이터베이스에 파일의 경로 위치를 저장
+        // ex)/local/2024/06/05/afjdkalsdfdog.jpg
+        return "urlPath";
 
     }
 

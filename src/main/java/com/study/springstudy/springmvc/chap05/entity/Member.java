@@ -35,4 +35,7 @@ public class Member {
     private LocalDateTime regDate;
     private String sessionId;
     private LocalDateTime limitTime;
+
+    @Setter //db와 1:1 매칭 연결됨.
+    private String profileImg;
 }
