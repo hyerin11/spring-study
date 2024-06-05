@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 파일 업로드 처리">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/anonymous.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/image-add.png" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="#회원가입 - 프로필 이미지 추가하기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/member.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/member.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members/sign-up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members/sign-up.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload/upload-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload/upload-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/MemberController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,14 +293,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00028" summary="페이징 렌더링 알고리즘 3 - 이전, 다음 활성화">
-      <option name="closed" value="true" />
-      <created>1716345627391</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1716345627391</updated>
     </task>
     <task id="LOCAL-00029" summary="페이징 렌더링 알고리즘 4 - 맨처음, 맨끝이동, 페이지 액티브 활성화">
       <option name="closed" value="true" />
@@ -691,7 +678,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717549063253</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="#회원가입 - 프로필 이미지 추가하기">
+      <option name="closed" value="true" />
+      <created>1717552268713</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1717552268713</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -710,7 +705,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="#index 레이아웃 업데이트" />
     <MESSAGE value="#로그인 일치/불일치 후 index이동" />
     <MESSAGE value="#로그인 유지 및 로그아웃" />
     <MESSAGE value="#로그인 상태에서 회원가입 및 로그인 창 이동 막기" />
@@ -735,6 +729,7 @@
     <MESSAGE value="# 댓글 인가처리 - 댓글쓰기 기능 수정" />
     <MESSAGE value="# 댓글 인가처리 - 내가 쓴 글만 수정 및 삭제하기(내가 쓴 글 아니면 버튼 없앰)" />
     <MESSAGE value="# 파일 업로드 처리" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 파일 업로드 처리" />
+    <MESSAGE value="#회원가입 - 프로필 이미지 추가하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="#회원가입 - 프로필 이미지 추가하기" />
   </component>
 </project>
