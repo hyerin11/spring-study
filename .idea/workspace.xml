@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 댓글 인가처리 - 내가 쓴 글만 수정 및 삭제하기(내가 쓴 글 아니면 버튼 없앰)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/upload/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/FileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload/upload-form.jsp" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 파일 업로드 처리">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/anonymous.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/image-add.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/member.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/member.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members/sign-up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members/sign-up.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload/upload-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload/upload-form.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,14 +298,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00027" summary="페이징 렌더링 알고리즘 2 - 마지막 구간 끝페이지 보정">
-      <option name="closed" value="true" />
-      <created>1716344734520</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1716344734520</updated>
     </task>
     <task id="LOCAL-00028" summary="페이징 렌더링 알고리즘 3 - 이전, 다음 활성화">
       <option name="closed" value="true" />
@@ -688,7 +683,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717482971849</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="# 파일 업로드 처리">
+      <option name="closed" value="true" />
+      <created>1717549063253</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1717549063253</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,7 +710,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="#로그인 로직 초기세팅" />
     <MESSAGE value="#index 레이아웃 업데이트" />
     <MESSAGE value="#로그인 일치/불일치 후 index이동" />
     <MESSAGE value="#로그인 유지 및 로그아웃" />
@@ -732,6 +734,7 @@
     <MESSAGE value="# 댓글 인가처리 - 인터셉터설정 및 fetch 함수 호출 일원화" />
     <MESSAGE value="# 댓글 인가처리 - 댓글쓰기 기능 수정" />
     <MESSAGE value="# 댓글 인가처리 - 내가 쓴 글만 수정 및 삭제하기(내가 쓴 글 아니면 버튼 없앰)" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 댓글 인가처리 - 내가 쓴 글만 수정 및 삭제하기(내가 쓴 글 아니면 버튼 없앰)" />
+    <MESSAGE value="# 파일 업로드 처리" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 파일 업로드 처리" />
   </component>
 </project>
