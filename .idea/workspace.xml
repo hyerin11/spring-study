@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 회원가입 - 프로필사진 처리 3수정_프사없이 가입시 프로필 기본 프로필이 뜨도록 오류 수정">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/response/ReplyFindAllDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/response/ReplyDetailDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/response/ReplyDetailDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/entity/Reply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/entity/Reply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/mapper/ReplyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/mapper/ReplyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ReplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ReplyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/getReply.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/getReply.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 회원가입 - 프로필사진 처리 4 _ 댓글창 프로필 이미지 넣기" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -302,14 +290,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00033" summary="댓글 기능 part1 - 게시물 총 댓글수 표기">
-      <option name="closed" value="true" />
-      <created>1716433244828</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1716433244828</updated>
     </task>
     <task id="LOCAL-00034" summary="댓글 기능 part2 - 매퍼 테스트">
       <option name="closed" value="true" />
@@ -695,7 +675,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717558760962</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="# 회원가입 - 프로필사진 처리 4 _ 댓글창 프로필 이미지 넣기">
+      <option name="closed" value="true" />
+      <created>1717569453169</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1717569453169</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -714,7 +702,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="#게시판 인터셉터_로그인 한 후 게시판으로 이동" />
     <MESSAGE value="#게시판 인터셉터_작성자 자동 지정" />
     <MESSAGE value="#게시판 인터셉터_자신이 작성한 게시물만 삭제할 수 있다.(관리자는 모두 삭제 가능)" />
     <MESSAGE value="#게시판 인터셉터_삭제요청이 들어오면 서버에서 한번 더 관리자인지 or 자신이 쓴 글 인지 체크한다 / 서버 오류 페이지 만들기" />
@@ -739,6 +726,7 @@
     <MESSAGE value="# 회원가입 - 프로필사진 처리 2" />
     <MESSAGE value="# 회원가입 - 프로필사진 처리 3_로그인하면 프로필 뜨도록" />
     <MESSAGE value="# 회원가입 - 프로필사진 처리 3수정_프사없이 가입시 프로필 기본 프로필이 뜨도록 오류 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 회원가입 - 프로필사진 처리 3수정_프사없이 가입시 프로필 기본 프로필이 뜨도록 오류 수정" />
+    <MESSAGE value="# 회원가입 - 프로필사진 처리 4 _ 댓글창 프로필 이미지 넣기" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 회원가입 - 프로필사진 처리 4 _ 댓글창 프로필 이미지 넣기" />
   </component>
 </project>

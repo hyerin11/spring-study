@@ -76,6 +76,7 @@
                                                 <div class="profile-box">
                                                     <c:choose>
                                                       <c:when test="${login != null && login.profile != null}">
+                                                        <img src="${login.profile}" alt="profile image">
                                                       </c:when>
                                                       <c:otherwise>
                                                         <img src="/assets/img/anonymous.jpg" alt="profile image">
