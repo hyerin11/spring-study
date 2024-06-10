@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 카카오 로그인 토근받기">
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 카카오 로그인 요청: 액세스 토큰 방식">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/response/KakaoUserDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/SnsLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/SnsLoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/SnsLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/SnsLoginService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -294,14 +294,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00037" summary="댓글 API 등록기능">
-      <option name="closed" value="true" />
-      <created>1716528808799</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1716528808799</updated>
     </task>
     <task id="LOCAL-00038" summary="댓글 API 등록기능-입력값 겁증">
       <option name="closed" value="true" />
@@ -687,7 +679,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717984012956</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="# 카카오 로그인 요청: 액세스 토큰 방식">
+      <option name="closed" value="true" />
+      <created>1717984658101</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1717984658101</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -706,7 +706,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="#게시판 인터셉터_쿠키저장_1" />
     <MESSAGE value="#게시판 인터셉터_쿠키저장_2_db저장" />
     <MESSAGE value="#게시판 인터셉터_쿠키저장_3_자동화(인터셉터)" />
     <MESSAGE value="#게시판 인터셉터_쿠키저장_3_자동화(인터셉터)자동로그인" />
@@ -731,6 +730,7 @@
     <MESSAGE value="# 회원가입 - 프로필사진 처리 5_오류수정(이미지)" />
     <MESSAGE value="# 카카오 로그인 인가코드 발급" />
     <MESSAGE value="# 카카오 로그인 토근받기" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 카카오 로그인 토근받기" />
+    <MESSAGE value="# 카카오 로그인 요청: 액세스 토큰 방식" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 카카오 로그인 요청: 액세스 토큰 방식" />
   </component>
 </project>

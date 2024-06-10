@@ -1,6 +1,7 @@
 package com.study.springstudy.springmvc.chap05.service;
 
 import com.study.springstudy.springmvc.chap05.dto.response.AccessTokenDto;
+import com.study.springstudy.springmvc.chap05.dto.response.KakaoUserDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -10,7 +11,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.HashMap;
 import java.util.Map;
 
 @Service
@@ -24,11 +24,14 @@ public class SnsLoginService {
         String accessToken = getKakaoAccessToken(requestParams);
 
         //발급받은 토큰으로 사용자 정보 가져오기
-        getKakaoUserInfo(accessToken);
+        KakaoUserDto.Properties UserInfo = getKakaoUserInfo(accessToken);
+
+        //카카오에서 받은 회원정보로 우리 사이트 회원가입 시키기
+
     }
 
     //토큰으로 사용자 정보 요청
-    private void getKakaoUserInfo(String accessToken) {
+    private KakaoUserDto.Properties getKakaoUserInfo(String accessToken) {
         //request uri
         String requestUri = "https://kapi.kakao.com/v2/user/me";
         //헤더 설정
@@ -38,15 +41,17 @@ public class SnsLoginService {
 
         //요청 보내기
         RestTemplate template = new RestTemplate();
-        ResponseEntity<Map> response = template.exchange(
+        ResponseEntity<KakaoUserDto> response = template.exchange(
                 requestUri
                 , HttpMethod.POST
                 , new HttpEntity<>(headers)
-                , Map.class
+                , KakaoUserDto.class
         );
         //응답정보 JSON 꺼내기
-        Map json = response.getBody();
+        KakaoUserDto json = response.getBody();
         log.debug("user profile: {}", json);
+
+        return json.getProperties();
     }
 
     //인가코드로 토큰 발급 요청
