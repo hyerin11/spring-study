@@ -276,17 +276,18 @@
 .top-section .amount div {
     margin-left: 15px;
     padding: 12px;
-    width: 30px;
+    width: 70px;
     height: 30px;
-    border-radius: 50%;
-    background: darkorange;
+    border-radius: 15%;
+    background: rgb(255, 216, 75);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
 }
 .top-section .amount div:hover {
     border-radius: 0;
-    background: coral;
+    background: rgb(255, 172, 70);
 }
 .top-section .amount div:last-child {
     margin-right: 10%;

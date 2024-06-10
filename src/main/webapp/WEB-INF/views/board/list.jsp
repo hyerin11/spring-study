@@ -51,9 +51,9 @@
           </div>
 
           <div class="amount">
-            <div><a href="#">6</a></div>
-            <div><a href="#">18</a></div>
-            <div><a href="#">30</a></div>
+            <button type="button" onclick="setSorting('viewCount')" class="btn btn-outline-dark float-right">최신순</button>
+            <button type="button" onclick="setSorting('viewCount')" class="btn btn-outline-dark float-right">조회순</button>
+            <button type="button" onclick="setSorting('viewCount')" class="btn btn-outline-dark float-right">추천순</button>
           </div>
 
         </div>
@@ -303,6 +303,10 @@
 
           // 3. 해당 태그에 selected 속성 부여
           $option?.setAttribute('selected', 'selected');
+
+
+      
+          
         }
         appendActivePage();
         fixSearchOption();

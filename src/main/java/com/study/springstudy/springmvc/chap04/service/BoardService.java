@@ -44,6 +44,8 @@ public class BoardService {
                 .map(b -> new BoardListResponseDto(b))
                 .collect(Collectors.toList());
 
+
+
         return dtoList;
     }
 

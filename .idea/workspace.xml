@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 회원가입 - 프로필사진 처리 4 _ 댓글창 프로필 이미지 넣기" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 회원가입 - 프로필사진 처리 5_오류수정(이미지)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/SnsLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members/sign-in.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members/sign-in.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -290,14 +299,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00034" summary="댓글 기능 part2 - 매퍼 테스트">
-      <option name="closed" value="true" />
-      <created>1716435687882</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1716435687882</updated>
     </task>
     <task id="LOCAL-00035" summary="REST API 기초">
       <option name="closed" value="true" />
@@ -683,7 +684,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717569453169</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="# 회원가입 - 프로필사진 처리 5_오류수정(이미지)">
+      <option name="closed" value="true" />
+      <created>1717570369452</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1717570369452</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -702,7 +711,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="#게시판 인터셉터_작성자 자동 지정" />
     <MESSAGE value="#게시판 인터셉터_자신이 작성한 게시물만 삭제할 수 있다.(관리자는 모두 삭제 가능)" />
     <MESSAGE value="#게시판 인터셉터_삭제요청이 들어오면 서버에서 한번 더 관리자인지 or 자신이 쓴 글 인지 체크한다 / 서버 오류 페이지 만들기" />
     <MESSAGE value="#게시판 인터셉터_쿠키저장_1" />
@@ -727,6 +735,7 @@
     <MESSAGE value="# 회원가입 - 프로필사진 처리 3_로그인하면 프로필 뜨도록" />
     <MESSAGE value="# 회원가입 - 프로필사진 처리 3수정_프사없이 가입시 프로필 기본 프로필이 뜨도록 오류 수정" />
     <MESSAGE value="# 회원가입 - 프로필사진 처리 4 _ 댓글창 프로필 이미지 넣기" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 회원가입 - 프로필사진 처리 4 _ 댓글창 프로필 이미지 넣기" />
+    <MESSAGE value="# 회원가입 - 프로필사진 처리 5_오류수정(이미지)" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 회원가입 - 프로필사진 처리 5_오류수정(이미지)" />
   </component>
 </project>
